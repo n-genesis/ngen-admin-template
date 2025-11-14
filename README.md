@@ -54,7 +54,7 @@ N-Gen Admin Dashboard
 
 ## Using Simple Server
 
-**Note:** You need Node.js and npm to be installed on your system. You can download Node.js and follow the instructions on how to do that on [nodejs.org](http://nodejs.org/);
+**Note:** You need Node.js and npm to be installed on your system. You can download Node.js and follow the instructions on how to do that on [nodejs.org](http://nodejs.org/).
 
 Open your terminal under the project root run the following commands:
 

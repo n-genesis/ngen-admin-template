@@ -24,7 +24,7 @@
 
 ## Preview
 
-![N-Gen Admin Dashboard Preview](https://ngendesign.com/images/templates/ngen-admin-dashboard.png) 
+![N-Gen Admin Dashboard Preview](https://ngendesign.com/images/templates/ngen-admin-dashboard-v1.png) 
 
 ### Template Files
 

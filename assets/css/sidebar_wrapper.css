@@ -1,0 +1,141 @@
+/*!
+* N-Gen Admin Dashboard v1.0 (https://ngendesign/templates/ngen-admin)
+* File: sidebar_wrapper.css
+* Author: Andrew Nite
+* Date: October 25, 2025
+* Description: Styles for the sidebar element for the  N-Gen Admin Dashboard template using Bootstrap 5.3.x.
+*/
+
+/*--------------------------------------------------------------
+# Main Navigation bar
+--------------------------------------------------------------*/
+#navbar-main {
+    
+}
+#wrapper {
+  overflow-x: hidden;
+}
+#sidebar-wrapper {
+  min-height: 100vh;
+  left: -15rem;
+  transition: all 0.25s ease-out;
+  position: fixed;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  position: relative;
+  left: 0px;
+  /* Push it to the right of the fixed element's width */
+  width: 100%;
+  /* Calculate remaining width */
+  height: 100vh;
+  /* Example height */
+  transition: all 0.25s ease-out;
+}
+
+#page-content {
+  
+}
+
+#page-content-wrapper #page-footer .bi {
+  color: var(--bs-black) !important;
+}
+
+body.ng-sidenav-toggled #wrapper #sidebar-wrapper {
+  left: 0;
+}
+
+body.ng-sidenav-toggled #wrapper #page-content-wrapper {
+  left: 240px;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    left: 0;
+  }
+
+  #page-content-wrapper {
+    left: 240px;
+    /* Push it to the right of the fixed element's width */
+    width: calc(100% - 240px);
+  }
+
+  body.ng-sidenav-toggled #wrapper #sidebar-wrapper {
+    left: -15rem;
+  }
+
+  /**/
+  body.ng-sidenav-toggled #wrapper #page-content-wrapper {
+    left: 0;
+    width: 100%;
+  }
+
+}
+
+#sidebar_v2 {
+  width: 240px;
+  height: 100vh;
+  padding-top: 8px !important;
+}
+
+#sidebar_v2 .bi-logo {
+  font-size: 28px;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.sidebar_v2 .btn-toggle {
+  padding: .25rem .5rem;
+  color: var(--bs-emphasis-color);
+  background-color: transparent;
+}
+
+.sidebar_v2 .btn-toggle:hover,
+.sidebar_v2 .btn-toggle:focus {
+  color: rgba(var(--bs-emphasis-color-rgb), .85);
+  background-color: var(--bs-tertiary-bg);
+}
+
+.sidebar_v2 .btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+  margin-top: 4px;
+}
+
+[data-bs-theme="dark"] .sidebar_v2 .btn-toggle::before {
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+}
+
+.sidebar_v2 .btn-toggle[aria-expanded="true"] {
+  color: rgba(var(--bs-emphasis-color-rgb), .85);
+}
+
+.sidebar_v2 .btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+  margin-top: 0px;
+}
+
+.sidebar_v2 .btn-toggle-nav a {
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+}
+
+.sidebar_v2 .btn-toggle-nav a:hover,
+.sidebar_v2 .btn-toggle-nav a:focus {
+  background-color: var(--bs-tertiary-bg) !important;
+}

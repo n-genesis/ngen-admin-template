@@ -45,7 +45,6 @@ N-Gen Admin Dashboard
 │   ├── demo
 │   │   ├── chart-area-demo.js
 │   │   ├── chart-bar-demo.js
-│   │   ├── chart-pie-demo.js
 │   └── favicon.ico
 ├── index.html
 ├── profile.html

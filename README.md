@@ -101,7 +101,8 @@ copies or substantial portions of the Software.
 
 
 ### TODO:
-- [ ] Script better swip left function  
+- [ ] Script better swip left function
+- [ ] Improve dark theme styles
 - [ ] Add more example pages
 
 

@@ -1,0 +1,32 @@
+{
+  "name": "ngen-admin-template",
+  "version": "1.0.0",
+  "description": "A free Bootstrap 5 admin template created by N-Gen Design",
+  "author": "Andrew Nite",
+  "license": "MIT",
+  "homepage": "https://github.com/n-genesis/ngen-admin-template#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n-genesis/ngen-admin-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/n-genesis/ngen-admin-template/issues"
+  },
+  "main": "server.js",
+  "serverjs": {
+    "url": "http://192.168.12.111",
+    "port": 3000
+  },
+  "scripts": {
+    "start-server": "node scripts/server.js"
+  },
+  "keywords": [
+    "boostrab",
+    "template",
+    "nodejs",
+    "web-server"
+  ],
+  "dependencies": {
+    "open": "^10.2.0"
+  }
+}

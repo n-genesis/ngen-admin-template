@@ -38,13 +38,12 @@ N-Gen Admin Dashboard Template featuring a responsive layout with a dark & light
     * Page (Blank page)
     * Folder (Example Folder/Directory page)
 
-
-## Contributing
-- Click Fork button on top screen
-- Create your development branch (`git checkout -b development-name-features`)
-- Commit your change (`git commit -am "development name features information"`)
-- Push to the branch (`git push origin development-name-features`)
-- Make a Pull request
+### TODO:
+- [ ] Fix broken avatar images
+- [ ] Script better swip left function
+- [ ] Improve dark theme styles
+- [ ] Add more example pages
+- [ ] Remove blank & unused CSS styles
 
 ## Changelog
 All the notable changes to the template will be listed here. Most change will be style, HTML, or JavaScript updates. If you have any suggestion feel free to suggest them.
@@ -98,13 +97,6 @@ N-Gen Admin Dashboard
 ```
 
 
-### TODO:
-- [ ] Script better swip left function
-- [ ] Improve dark theme styles
-- [ ] Add more example pages
-- [ ] Remove blank & unused CSS styles
-
-
 ## Using Simple Server  
 **Note:** You need Node.js and npm to be installed on your system. You can download Node.js and follow the instructions on how to do that on [nodejs.org](http://nodejs.org/).
 
@@ -127,6 +119,13 @@ You can change the hostname and port in package.json:
     "port": 3000
 }
 ```
+
+## Contributing
+- Click Fork button on top screen
+- Create your development branch (`git checkout -b development-name-features`)
+- Commit your change (`git commit -am "development name features information"`)
+- Push to the branch (`git push origin development-name-features`)
+- Make a Pull request
 
 ## Credits & Attribution
 

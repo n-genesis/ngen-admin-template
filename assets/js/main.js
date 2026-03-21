@@ -24,7 +24,7 @@
     };
 
     // Set the theme on page load
-    setTheme(getPreferredTheme());
+    // setTheme(getPreferredTheme());
     
     const themeBtn = document.querySelector('[data-ng-btn="theme"]');
     if(themeBtn){

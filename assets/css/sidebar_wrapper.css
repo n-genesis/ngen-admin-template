@@ -1,8 +1,10 @@
 /*!
-* N-Gen Admin Dashboard v1.0 (https://ngendesign/templates/ngen-admin)
+* N-Gen Admin Dashboard v2.0 (https://ngendesign/templates/ngen-admin)
 * File: sidebar_wrapper.css
 * Author: Andrew Nite
-* Date: October 25, 2025
+* Created: October 25, 2025
+* Updated: 20th March 2026
+*
 * Description: Styles for the sidebar element for the  N-Gen Admin Dashboard template using Bootstrap 5.3.x.
 */
 
@@ -12,9 +14,11 @@
 #navbar-main {
     
 }
+
 #wrapper {
   overflow-x: hidden;
 }
+
 #sidebar-wrapper {
   min-height: 100vh;
   left: -15rem;

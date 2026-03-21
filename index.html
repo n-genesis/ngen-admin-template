@@ -1,11 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="This is going to be some type od description for the BootSnippets website.">
-    <meta name="author" content="N-Gen Design">
-    <title>N-Gen Admin Dashboard</title>
+    <meta name="description" content="A cool description for your application.">
+    <meta name="author" content="Admin Application">
+    <title>N-Gen Admin | Dashboard Page</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <!-- Bootstrap CSS-->
@@ -18,16 +19,19 @@
     <!-- Sidebar Styles -->
     <link href="assets/css/sidebar_wrapper.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="d-flex" id="wrapper">
-        <!-- Sidebar-->
+
+        <!-- Side Navbar-->
         <aside class="border-end" id="sidebar-wrapper">
             <div id="sidebar_v2" class="sidebar_v2 d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary overflow-auto">
-                <a href="/"
+                <a href="./"
                     class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                     <i class="bi bi-bootstrap-fill bi-logo me-2"></i> <span class="fs-4">N-Gen Admin</span> </a>
                 <hr style="margin-top: 6px !important;">
-                <!-- Sidebar Navigation -->
+
+                <!-- Main Side Navbar -->
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li>
                         <a href="index.html" class="nav-link active">
@@ -80,14 +84,21 @@
                         </div>
                     </li>
                 </ul>
+
                 <hr>
-                <div class="dropdown"> <a href="#"
+
+                <!-- Bottom Side Navbar -->
+                <div class="dropdown">
+                    <a href="#"
                         class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
-                        data-bs-toggle="dropdown" aria-expanded="false"> <img src="assets/images/user-avatar.png" alt=""
+                        data-bs-toggle="dropdown" aria-expanded="false"> <img src="assets/images/user.png" alt=""
                             width="32" height="32" class="rounded-circle me-2"> <strong>Guest</strong> </a>
                     <ul class="dropdown-menu text-small shadow">
-                        <li><a class="dropdown-item" href="#" data-ng-btn="theme"><i class="bi bi-moon-fill"></i> <span
-                                    class="ng-theme">Dark Theme</span></a></li>
+                        <li>
+                            <a class="dropdown-item" href="#" data-ng-btn="theme">
+                                <i class="bi bi-moon-fill"></i> <span class="ng-theme">Dark Theme</span>
+                            </a>
+                        </li>
                         <li><a class="dropdown-item" href="#">Settings</a></li>
                         <li><a class="dropdown-item" href="#">Profile</a></li>
                         <li>
@@ -98,34 +109,48 @@
                 </div>
             </div>
         </aside>
-        <!-- Page content wrapper-->
-        <div id="page-content-wrapper">
-            <!-- Top navigation-->
+        
+        <!-- Main page content wrapper-->
+        <main id="page-content-wrapper">
+
+            <!-- Top Nabar -->
             <nav id="navbar-main" class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-start">
                 <div class="container-fluid">
+                    <!-- Mobile navbar collapes toggle -->
                     <button class="btn btn-secondary" id="sidebarToggle"><i class="bi bi-grid"></i></button>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation"><span
-                            class="navbar-toggler-icon"></span></button>
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Nabar Items -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                             <li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a> 
+                                <!-- Dropdown -->
+                                <div aria-labelledby="dropdownUser" class="dropdown-menu dropdown-menu-end">
+                                    <h6 class="dropdown-header">
+                                        <div class="dropdown-user-details">
+                                            <div class="dropdown-user-details-name">@username</div>
+                                            <div class="dropdown-user-details-email">no-reply@email.com</div>
+                                        </div>
+                                    </h6>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Activity Log</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Logout</a>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+
             <!-- Page content-->
             <main id="page-content" class="container-fluid pt-3 pb-5 min-vh-100">
                 <h1>Dashboard</h1>
@@ -224,12 +249,11 @@
                         </div>
                     </div>
                 </div>
-                <!-- Preloader-->
-                <div id="preloader"></div>
+                <!-- Preloader <div id="preloader"></div> -->
             </main>
-            <!-- Footer -->
-            <footer id="page-footer" class="container">
-                <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+
+            <footer id="page-footer" class="container-fluid">
+                <div class="d-flex flex-wrap justify-content-between align-items-center pt-2 pb-3 my-4 border-top">
                     <p class="col-md-4 mb-0 text-body-secondary">&copy;
                         <script>
                             document.write(new Date().getFullYear());
@@ -243,7 +267,7 @@
                 </div>
             </footer>
             <!-- /END Footer -->
-        </div>
+        </main>
     </div>
     <!-- Scroll To Top -->
     <button type="button" class="btn btn-primary btn-floating btn-lg" id="btn-back-to-top">

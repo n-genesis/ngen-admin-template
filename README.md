@@ -53,7 +53,8 @@ All the notable changes to the template will be listed here. Most change will be
 
 ## - 2026-03-20
 ### Added
-- New **400x400px** avatar images (*feel free to use them*)
+- New **400x400px** user avatar images (*feel free to use them*)
+- Top Right dropdown menu header (for username or account info) 
 - Support for **Dark Mode** in the user settings.
 
 ### Changed
@@ -78,9 +79,11 @@ N-Gen Admin Dashboard
 │   │   └── stylesheet.css
 │   ├── images
 │   │   ├── users
-│   │   │   ├──
-│   │   ├── default-avatar.png
-│   │   └── user-avatar.png
+│   │   │   ├── cartoon-avatars
+│   │   │   ├── 640x640
+│   │   │   └── misc. pics
+│   │   ├── misc. pics
+│   │   └── user.png
 │   ├── js
 │   │   ├── main.js (Theme toggle, scroll to top, and preloader)
 │   │   └── scripts.js (Sidebar toggle)

@@ -1,5 +1,5 @@
 # N-Gen Admin Dashboard Template
-[N-Gen Admin Dashboard](https://admin-template.ngendesign.com) is a free responsive admin template built with Bootstrap 5 and based on Start Bootstrap's Simple Sidebar template.
+A free responsive admin template built with Bootstrap 5 and based on [Start Bootstrap's Simple Sidebar template](https://github.com/startbootstrap/startbootstrap-simple-sidebar).
 ![N-Gen Admin Dashboard Preview](https://ngendesign.com/assets/templates/ngen-admin-dashboard-v2.png)  
 
 ## A Great Starter Template
@@ -23,20 +23,20 @@ N-Gen Admin Dashboard Template featuring a responsive layout with a dark & light
 [![Static Badge](https://img.shields.io/badge/Start%20Bootstrap-Simple%20Sidebar-dd3d31?style=for-the-badge)](https://github.com/startbootstrap/startbootstrap-simple-sidebar)
 
 
-## Features
-* Bootstrap 5 - Latest version with all modern utilities
-
-* Responsive - Mobile-optimized layouts across all devices
-* Sidebar Menu - Off canvas navigation on smaller screen sizes.
-* Dark/Light Mode - Seamless theme switching with localStorage persistence
-* Page loader/unloader
-* Mobile Features
-    * Swipe left to open sidebar
-* Simple Starter Pages
-    * Dashboard (Example Dashboard page)
-    * Profile (Example user profile page)
-    * Page (Blank page)
-    * Folder (Example Folder/Directory page)
+## ✨ New Features
+- Bootstrap 5 - Latest version with all modern utilities
+- Responsive - Mobile-optimized layouts across all devices
+- Sidebar Menu - Off canvas navigation on smaller screen sizes.
+- Dark/Light Mode - Theme switching with localStorage persistence
+- Page loader/unloader
+- Mobile Features
+    - Swipe left to open sidebar
+### 📝 Template Pages 
+- Simple Starter Pages
+    - Dashboard (Example Dashboard page)
+    - Profile (Example user profile page)
+    - Page (Blank page)
+    - Folder (Example Folder/Directory page)
 
 ### TODO:
 - [ ] Fix broken avatar images
@@ -45,56 +45,58 @@ N-Gen Admin Dashboard Template featuring a responsive layout with a dark & light
 - [ ] Add more example pages
 - [ ] Remove blank & unused CSS styles
 
-## Changelog
-All the notable changes to the template will be listed here. Most change will be style, HTML, or JavaScript updates. If you have any suggestion feel free to suggest them.
-
-## 1.2.0
-
-## - 2026-03-20
-### Added
-- New **400x400px** user avatar images (*feel free to use them*)
-- Top Right dropdown menu header (for username or account info) 
-- Support for **Dark Mode** in the user settings.
-
-### Changed
-- Profile pages Tabs: Projects, Tasks & Teams
-- Updated the avatar upload limit to **400x400px** for better quality.
-- Refactored the CSS for faster initial page loads.
-
-### Fixed
-- Fixed a bug where the "Submit" button stayed disabled after a validation error.
-
-## Customization Notes: 
-Here are a few suggestions when making your edits when creating you custom style and design. Everthing is listed should be simple to understand. If you have more in-depth questions about how to make wticks to the layout and base style remember to check out [The Official Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for more information.
-
-## Template Files
+## 📂 Project Structure
 The following directories and files make up template:
 
-```
-N-Gen Admin Dashboard
-├── assets
-│   ├── css
+```text
+.
+├──📝 README.md                         # Project documentation
+├── 📂 assets/                          # images, stylesheets & Javascript files
+│   ├── 📂 css/
 │   │   ├── sider_wrapper.css
 │   │   └── stylesheet.css
-│   ├── images
-│   │   ├── users
-│   │   │   ├── cartoon-avatars
-│   │   │   ├── 640x640
+│   ├── 📂 images
+│   │   ├── 📂 users
+│   │   │   ├── 📂 cartoon-avatars
+│   │   │   ├── 📂 640x640
 │   │   │   └── misc. pics
 │   │   ├── misc. pics
 │   │   └── user.png
-│   ├── js
-│   │   ├── main.js (Theme toggle, scroll to top, and preloader)
-│   │   └── scripts.js (Sidebar toggle)
-│   ├── demo
-│   │   ├── chart-area-demo.js
-│   │   ├── chart-bar-demo.js
+│   ├── 📂 js
+│   │   ├── 📄 main.js (Theme toggle, scroll to top, and preloader)
+│   │   └── 📄 scripts.js (Sidebar toggle)
+│   ├── 📂 demo
+│   │   ├── 📄 chart-area-demo.js
+│   │   ├── 📄 chart-bar-demo.js
 │   └── favicon.ico
-├── index.html
-├── profile.html
-├── page.html
-└── folder.html
+├── 🔧 scripts/                         # simple node.js http server
+│   └── ⚙️ server.js
+├── 📄 index.html
+├── 📄 profile.html
+├── 📄 page.html
+├── 📄 404.html
+├── 📄 500.html
+├── 📄 index.html
+├── 📄 folder.html
+└── 📜 LICENSE.md                       # MIT License
 ```
+
+The other directories and files and for simple development.
+
+## Changelog
+All the notable changes to the template will be listed here. Most change will be style, HTML, or JavaScript updates. If you have any suggestion feel free to suggest them.
+
+## v1.2.0
+## 2026-03-20
+### Added
+- New **400x400px** user avatar images (*feel free to use them*)
+- Top Right dropdown menu header (for username or account info) 
+
+### Changed
+- Profile pages Tabs: Projects, Tasks & Teams
+
+## Customization Notes: 
+Here are a few suggestions when making your edits when creating you custom style and design. Everthing is listed should be simple to understand. If you have more in-depth questions about how to make wticks to the layout and base style remember to check out [The Official Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for more information.
 
 
 ## Using Simple Server  

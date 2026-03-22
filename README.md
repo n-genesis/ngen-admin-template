@@ -97,7 +97,7 @@ All the notable changes to the template will be listed here. Most change will be
 - Profile pages Tabs: Projects, Tasks & Teams
 
 ## Customization Notes: 
-Here are a few suggestions when making your edits when creating you custom style and design. Everthing is listed should be simple to understand. If you have more in-depth questions about how to make wticks to the layout and base style remember to check out [The Official Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for more information.
+Here are a few suggestions when making your edits when creating you custom style and design. Everthing listed should be simple to understand. If you have more in-depth questions about how to make wticks to the layout and base style remember to check out [The Official Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for more information.
 
 
 ## Using Simple Server  

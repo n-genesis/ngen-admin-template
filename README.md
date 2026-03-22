@@ -31,6 +31,7 @@ N-Gen Admin Dashboard Template featuring a responsive layout with a dark & light
 - Page loader/unloader
 - Mobile Features
     - Swipe left to open sidebar
+
 ### 📝 Template Pages 
 - Simple Starter Pages
     - Dashboard (Example Dashboard page)
@@ -38,7 +39,7 @@ N-Gen Admin Dashboard Template featuring a responsive layout with a dark & light
     - Page (Blank page)
     - Folder (Example Folder/Directory page)
 
-### TODO:
+### 📋 TODO:
 - [ ] Fix broken avatar images
 - [ ] Script better swip left function
 - [ ] Improve dark theme styles

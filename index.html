@@ -340,6 +340,46 @@
         </div>
     </div>
 
+    <!-- Welcome Modal -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-4">
+                <div class="modal-body">
+                    <!-- Logo Image -->
+                    <img src="https://ngendesign.com/images/ngenlogo.png" alt="Company Logo" class="mb-2 img-fluid"
+                        style="max-width: 120px;">
+
+                    <!-- Welcome Text -->
+                    <h2 class="fw-bold" id="welcomeModalLabel">Welcome to the Dashboard!</h2>
+                    <p class="text-muted">Glad you're here. Checkout and explore the latest updates and features.</p>
+
+                    <!-- Action Button -->
+                    <button type="button" class="btn btn-primary mt-3 px-4" data-bs-dismiss="modal">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to trigger on page load -->
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const modalElement = document.getElementById('welcomeModal');
+            // 1. Check if the session flag exists
+            const hasSeenThisSession = sessionStorage.getItem('nGenAdminWelcomeModal');
+
+            if (!hasSeenThisSession) {
+                const myModal = new bootstrap.Modal(modalElement);
+                myModal.show();
+                // 2. Listen for the modal being hidden (closed by button, backdrop, or Esc)
+                modalElement.addEventListener('hidden.bs.modal', function () {
+                    // 3. Save the flag to sessionStorage so it stays hidden until the tab/browser is closed
+                    // sessionStorage.setItem('nGenAdminWelcomeModal', 'true');
+                    console.log("Session cookie saved. Modal won't show again this session.");
+                });
+            }
+        });
+    </script> -->
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

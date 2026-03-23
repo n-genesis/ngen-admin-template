@@ -35,11 +35,14 @@ This template features a responsive layout with: a dark & light theme, navigatio
 - Chart.js (For dashboard example)
 
 ### 📝 Template Pages 
-- Simple Starter Pages
-    - Dashboard (Example Dashboard page)
-    - Profile (Example user profile page)
-    - Page (Blank page)
-    - Folder (Example Folder/Directory page)
+- Dashboard (Example Dashboard page)
+- Profile (Example user profile page)
+- Page (Blank page)
+- Folder (Example Folder/Directory page)
+- Authentication Page
+    - Login, rigister, and password reset
+- Error Pages
+    - 401, 404, and 500
 
 ### 📋 TODO:
 - [ ] Fix broken avatar images

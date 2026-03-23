@@ -9,7 +9,7 @@
     /**
      * THEME TOGGLE Section
      */
-    const themeStorVal = 'n-gen-bsnippet-theme';
+    const themeStorVal = 'n-gen-admin-theme';
     // Function to set the theme based on preference or system settings
     const getPreferredTheme = () => {
         const storedTheme = localStorage.getItem(themeStorVal);

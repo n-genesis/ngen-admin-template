@@ -1,5 +1,5 @@
 # N-Gen Admin Dashboard Template
-A sleek and fully responsive free **Bootstrap 5** admin dashboard template built with touch-swipe left to display offcavus on mobile devices. It's a great starter-kit for developing modern and robust, user-friendly, scalable, and feature-rich web applications.
+A sleek and fully responsive Free **Bootstrap 5** Admin Dashboard Template with swipe left event on mobile screens to display the offcavus. It's a great starter-kit for developing a modern, user-friendly, and customizable feature-rich front-end for your web applications.
 
 ![N-Gen Admin Dashboard Preview](https://ngendesign.com/templates/ngen-admin-dashboard-v4.png)
 

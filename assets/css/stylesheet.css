@@ -1,5 +1,5 @@
 /*!
-* N-Gen Admin Dashboard v1.0 (https://ngendesign/templates/ngen-admin-dashboard)
+* N-Gen Admin Dashboard v1.2.0 (https://ngendesign/templates/ngen-admin-dashboard)
 * File: stylesheet.css
 * Author: Andrew Nite
 * Date: October 25, 2025
@@ -85,9 +85,6 @@
     margin-left: 1rem;
     margin-right: 1rem;
 }
-
-
-
 
 /*--------------------------------------------------------------
 # Card ReStyles
@@ -459,6 +456,7 @@
 .social-about p {
     margin-bottom: 20px;
 }
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/

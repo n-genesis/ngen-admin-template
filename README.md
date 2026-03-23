@@ -1,5 +1,6 @@
 # N-Gen Admin Dashboard Template
-A free responsive admin template built with Bootstrap 5 and based on [Start Bootstrap's Simple Sidebar template](https://github.com/startbootstrap/startbootstrap-simple-sidebar).
+A free responsive admin template built with Bootstrap 5 and inspired by Start Bootstrap's [Simple Sidebar](https://github.com/startbootstrap/startbootstrap-simple-sidebar) & [SB Admin](https://github.com/startbootstrap/startbootstrap-sb-admin) templates.
+
 ![N-Gen Admin Dashboard Preview](https://ngendesign.com/templates/ngen-admin-dashboard-v3.png)
 
 ## A Great Starter Template
@@ -31,6 +32,7 @@ This template features a responsive layout with: a dark & light theme, navigatio
 - Page loader/unloader
 - Mobile Features
     - Swipe left to open sidebar
+- Chart.js (For dashboard example)
 
 ### 📝 Template Pages 
 - Simple Starter Pages
@@ -75,6 +77,7 @@ The following directories and files make up template:
 ├── 📄 index.html
 ├── 📄 profile.html
 ├── 📄 page.html
+├── 📄 401.html
 ├── 📄 404.html
 ├── 📄 500.html
 ├── 📄 index.html
@@ -134,4 +137,5 @@ You can change the hostname and port in package.json:
 
 - **[Bootstrap 5](https://getbootstrap.com)** - The world's most popular CSS framework
 - **[Bootstrap Icons](https://icons.getbootstrap.com)** - Official Bootstrap icon library
-- **[Start Bootstrap - Simple Sidebar](https://github.com/startbootstrap/startbootstrap-simple-sidebar)** - Simple Sidebar is an off canvas sidebar navigation template
+- **[Start Bootstrap - Simple Sidebar](https://github.com/startbootstrap/startbootstrap-simple-sidebar)** - Simple Sidebar is an off canvas sidebar navigation template.
+- **[Start Bootstrap - SB Admin](https://github.com/startbootstrap/startbootstrap-sb-admin)** - An Admin dashboard template for Bootstrap.

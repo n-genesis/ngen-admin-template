@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="This is going to be some type od description for the BootSnippets website.">
-    <meta name="author" content="N-Gen Design">
+    <meta name="author" content="App Name">
     <title>N-Gen Admin | Folder</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -20,15 +20,16 @@
 </head>
 <body>
     <div class="d-flex" id="wrapper">
-        <!-- Sidebar-->
+        <!-- Side Navbar-->
         <aside class="border-end" id="sidebar-wrapper">
             <div id="sidebar_v2" class="sidebar_v2 d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary overflow-auto">
-                <a href="/"
+                <a href="./"
                     class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                     <i class="bi bi-bootstrap-fill bi-logo me-2"></i> <span class="fs-4">N-Gen Admin</span> </a>
                 <hr style="margin-top: 6px !important;">
-                <!-- Sidebar Navigation -->
-                <ul class="nav nav-pills flex-column mb-auto">
+
+                <!-- Main Side Navbar -->
+                <ul class="nav nav-pills flex-column mb-auto" id="sidebarMenu">
                     <li>
                         <a href="index.html" class="nav-link link-body-emphasis">
                             <i class="bi bi-columns me-2"></i> Dashboard </a>
@@ -38,23 +39,44 @@
                             <i class="bi bi-person-square me-2"></i> Profile </a>
                     </li>
                     <li>
-                        <a href="page.html" class="nav-link link-body-emphasis">
-                            <i class="bi bi-file-earmark-text me-2"></i> Pages </a>
-                    </li>
-                    <li>
                         <a href="folder.html" class="nav-link active">
                             <i class="bi bi-folder2 me-2"></i> Folder </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link link-body-emphasis">
-                            <i class="bi bi-calendar3 me-2"></i> Articles </a>
+                        <a href="page.html" class="nav-link link-body-emphasis">
+                            <i class="bi bi-file-earmark-text me-2"></i> Blank Page </a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Parent Link/Trigger -->
+                        <a class="nav-link d-flex justify-content-between align-items-center link-body-emphasis" data-bs-toggle="collapse"
+                            href="#submenu1" role="button" aria-expanded="false" aria-controls="submenu1">
+                            <span><i class="bi bi-file-earmark-text me-2"></i> Other Pages</span>
+                            <i class="bi bi-chevron-down"></i> <!-- Optional Icon -->
+                        </a>
+                        <!-- Collapsible Sub-Nav -->
+                        <div class="collapse" id="submenu1" data-bs-parent="#sidebarMenu">
+                            <ul class="nav flex-column ms-4">
+                                <li class="nav-item">
+                                    <a class="nav-link small link-body-emphasis" href="401.html">401 Page</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link small link-body-emphasis" href="404.html">404 Page</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link small link-body-emphasis" href="500.html">500 Page</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link link-body-emphasis">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="nav-link link-body-emphasis">
                             <i class="bi bi-copy me-2"></i> Modal </a>
                     </li>
                     <!-- END Sidebar Navigation -->
+                     
                     <li class="border-top my-3"></li>
+
                     <li class="mb-1"> <button
                             class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
                             data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
@@ -79,14 +101,21 @@
                         </div>
                     </li>
                 </ul>
+
                 <hr>
-                <div class="dropdown"> <a href="#"
+
+                <!-- Bottom Side Navbar -->
+                <div class="dropdown">
+                    <a href="#"
                         class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
-                        data-bs-toggle="dropdown" aria-expanded="false"> <img src="assets/images/user-avatar.png" alt=""
+                        data-bs-toggle="dropdown" aria-expanded="false"> <img src="assets/images/user.png" alt=""
                             width="32" height="32" class="rounded-circle me-2"> <strong>Guest</strong> </a>
                     <ul class="dropdown-menu text-small shadow">
-                        <li><a class="dropdown-item" href="#" data-ng-btn="theme"><i class="bi bi-moon-fill"></i> <span
-                                    class="ng-theme">Dark Theme</span></a></li>
+                        <li>
+                            <a class="dropdown-item" href="#" data-ng-btn="theme">
+                                <i class="bi bi-moon-fill"></i> <span class="ng-theme">Dark Theme</span>
+                            </a>
+                        </li>
                         <li><a class="dropdown-item" href="#">Settings</a></li>
                         <li><a class="dropdown-item" href="#">Profile</a></li>
                         <li>
@@ -97,6 +126,7 @@
                 </div>
             </div>
         </aside>
+
         <!-- Page content wrapper-->
         <div id="page-content-wrapper">
             <!-- Top navigation-->
@@ -914,6 +944,7 @@
             </footer>
             <!-- /END Footer -->
         </div>
+        
     </div>
     <!-- Scroll To Top -->
     <button type="button" class="btn btn-primary btn-floating btn-lg" id="btn-back-to-top">

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="A cool description for your application.">
-    <meta name="author" content="Admin Application">
+    <meta name="author" content="App Name">
     <title>N-Gen Admin | Dashboard Page</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -22,7 +22,6 @@
 
 <body>
     <div class="d-flex" id="wrapper">
-
         <!-- Side Navbar-->
         <aside class="border-end" id="sidebar-wrapper">
             <div id="sidebar_v2" class="sidebar_v2 d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary overflow-auto">
@@ -32,34 +31,79 @@
                 <hr style="margin-top: 6px !important;">
 
                 <!-- Main Side Navbar -->
-                <ul class="nav nav-pills flex-column mb-auto">
+                <ul class="nav nav-pills flex-column mb-auto" id="sidebarMenu">
                     <li>
                         <a href="index.html" class="nav-link active">
                             <i class="bi bi-columns me-2"></i> Dashboard </a>
                     </li>
                     <li>
                         <a href="profile.html" class="nav-link link-body-emphasis">
-                            <i class="bi bi-person-square me-2"></i> Profile </a>
-                    </li>
-                    <li>
-                        <a href="page.html" class="nav-link link-body-emphasis">
-                            <i class="bi bi-file-earmark-text me-2"></i> Page </a>
+                            <i class="bi bi-person"></i> Profile </a>
                     </li>
                     <li>
                         <a href="folder.html" class="nav-link link-body-emphasis">
                             <i class="bi bi-folder2 me-2"></i> Folder </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link link-body-emphasis">
-                            <i class="bi bi-calendar3 me-2"></i> Articles </a>
+                        <a href="page.html" class="nav-link link-body-emphasis">
+                            <i class="bi bi-file-earmark-text me-2"></i> Blank Page</a>
                     </li>
+                    <li class="nav-item">
+                        <!-- Parent Link/Trigger -->
+                        <a class="nav-link d-flex justify-content-between align-items-center link-body-emphasis"
+                            data-bs-toggle="collapse" href="#submenu1" role="button" aria-expanded="false"
+                            aria-controls="submenu1">
+                            <span><i class="bi bi-exclamation-triangle"></i> Error Page</span>
+                            <i class="bi bi-chevron-down"></i> <!-- Optional Icon -->
+                        </a>
+                        <!-- Collapsible Sub-Nav -->
+                        <div class="collapse" id="submenu1" data-bs-parent="#sidebarMenu">
+                            <ul class="nav flex-column ms-4">
+                                <li class="nav-item">
+                                    <a class="nav-link small link-body-emphasis" href="401.html">401 Page</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link small link-body-emphasis" href="404.html">404 Page</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link small link-body-emphasis" href="500.html">500 Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Parent Link/Trigger -->
+                        <a class="nav-link d-flex justify-content-between align-items-center link-body-emphasis"
+                            data-bs-toggle="collapse" href="#submenu2" role="button" aria-expanded="false"
+                            aria-controls="submenu2">
+                            <span><i class="bi bi-shield-lock"></i> Authentication</span>
+                            <i class="bi bi-chevron-down"></i> <!-- Optional Icon -->
+                        </a>
+                        <!-- Collapsible Sub-Nav -->
+                        <div class="collapse" id="submenu2" data-bs-parent="#sidebarMenu">
+                            <ul class="nav flex-column ms-4">
+                                <li class="nav-item">
+                                    <a class="nav-link small link-body-emphasis" href="login.html">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link small link-body-emphasis" href="regitser.html">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link small link-body-emphasis" href="forgot.html">Forgot Password</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Modal Example-->
                     <li>
                         <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
                             class="nav-link link-body-emphasis">
                             <i class="bi bi-copy me-2"></i> Modal </a>
                     </li>
                     <!-- END Sidebar Navigation -->
+
                     <li class="border-top my-3"></li>
+
                     <li class="mb-1"> <button
                             class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
                             data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
@@ -109,7 +153,7 @@
                 </div>
             </div>
         </aside>
-        
+
         <!-- Main page content wrapper-->
         <main id="page-content-wrapper">
 
@@ -130,7 +174,7 @@
                             <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a> 
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                                 <!-- Dropdown -->
                                 <div aria-labelledby="dropdownUser" class="dropdown-menu dropdown-menu-end">
                                     <h6 class="dropdown-header">

@@ -45,8 +45,7 @@ This template features a responsive layout with: a dark & light theme, toggleabl
     - 401, 404, and 500
 
 ### 📋 TODO:
-- [ ] Fix broken avatar images
-- [ ] Script better swip left function
+- [ ] Script better touch-swipe left function
 - [ ] Improve dark theme styles
 - [ ] Add more example pages
 - [ ] Remove blank & unused CSS styles

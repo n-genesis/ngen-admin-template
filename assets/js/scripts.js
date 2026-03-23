@@ -9,6 +9,8 @@ window.addEventListener('DOMContentLoaded', event => {
 
     /**
      * Toggle the side navigation
+     * 
+     * TODO: Fix icon change on toggle when tapping on #page-content to close offcavus
      */
     const sidebarToggle = document.body.querySelector('#sidebarToggle');
     if (sidebarToggle) {
@@ -37,7 +39,7 @@ window.addEventListener('DOMContentLoaded', event => {
     /**
      * Detect left swipe to open sidebar
      * 
-     * USing methods pageX to get the touch point position relative to the viewport 
+     * Using methods pageX to get the touch point position relative to the viewport 
      * and starting at 0px is detected since the main elements are at to position: fixed or ralative.
      * Also check is localStorage value is set to toggle button icon.
      */
@@ -77,7 +79,7 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     }, { passive: false });
 
-    // Close Sidebar if #page-content-wrapper is tapped
+    // Close Sidebar if #page-content is tapped
     document.getElementById('page-content').addEventListener('touchstart', event => {
         toggleSideBtn();
         if (document.body.classList.contains('ng-sidenav-toggled')) {

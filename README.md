@@ -1,10 +1,6 @@
 # N-Gen Admin Dashboard Template
 A free responsive admin template built with Bootstrap 5 and based on [Start Bootstrap's Simple Sidebar template](https://github.com/startbootstrap/startbootstrap-simple-sidebar).
-<<<<<<< HEAD
 ![N-Gen Admin Dashboard Preview](https://ngendesign.com/templates/ngen-admin-dashboard-v3.png)
-=======
-![N-Gen Admin Dashboard Preview](https://ngendesign.com/templates/ngen-admin-dashboard-v3.png)  
->>>>>>> 775e96dda228b82a55e0546eed9832912b3ad305
 
 ## A Great Starter Template
 This template features a responsive layout with: a dark & light theme, navigation menu on the left for mobile devices, & wrapper `main` element to keep the content orginized. Made to be simple by sticking with Bootstrap 5's layout framework. With little custom CSS and instead extending it's styling and using HTML5 semantic tags, makes it easy to customization for your own project. It also doesn't use any JavaScript libraries cluttering your scripts and locking you into using premade JavaScript UI functions. It's a great starter template for small project or to use for the `Views` or `temaplates` in small custom application using frameworks like; CodeIgniter 4, CakePHP, or Symfony. It looks great on mobile screen all the way up to desktop monitors. Feel free to customize it and use it in your next awesome web application project.  

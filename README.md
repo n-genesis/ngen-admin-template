@@ -1,10 +1,10 @@
 # N-Gen Admin Dashboard Template
-A sleek and fully responsive free **Bootstrap 5** admin dashboard template built with touch-swipe left to display offcavus on mobile devices. It's a great starting-kit for developing modern and robust, user-friendly, scalable, and feature-rich web applications.
+A sleek and fully responsive free **Bootstrap 5** admin dashboard template built with touch-swipe left to display offcavus on mobile devices. It's a great starter-kit for developing modern and robust, user-friendly, scalable, and feature-rich web applications.
 
 ![N-Gen Admin Dashboard Preview](https://ngendesign.com/templates/ngen-admin-dashboard-v4.png)
 
 ## A Great Starter Template
-This template features a responsive layout with: a dark & light theme, toggleable, offcanvas navbar mobile devices, and a wrapper `#page-content` to keep the content orginized. It's made to be simple by using minimal custom CSS and instead extending Bootstrap's styling framewrok. While also incorperating HTML5 semantic tags, its extremely easy to customization for your own project. To prevent cluttering your scripts and locking you into using premade JavaScript functions, it doesn't use any large JavaScript libraries. Gving you the ability to add you own event triggers and mechanics. It's a great starter template for small project or to use for the `Views` or `temaplates` in small custom application using frameworks like; CodeIgniter 4, CakePHP, or Symfony. It looks great on mobile screen all the way up to desktop monitors. Feel free to customize it and use it in your next awesome web application project.  
+This template features a responsive layout, dark & light theme, offcanvas on mobile devices, and a wrapper `#page-content` element to keep your content orginized. It's made to be simple by using minimal custom CSS and instead extending Bootstrap's framewrok. It also uses HTML5 tags to help keep your page organized and makes its extremely easy to customization for your own project. To give you the ability to add you own event triggers and mechanics, it doesn't use any large JavaScript libraries to prevent cluttering your scripts and locking you into using premade functions. All hands down it's a simple starter template for `Views` or `temaplates` in small application using frameworks like; CodeIgniter 4, CakePHP, or Symfony. It looks great on mobile screen all the way up to desktop monitors. Feel free to customize it and use it in your next awesome application.  
 
 **[View Live Preview](https://admin-template.ngendesign.com/)**
 

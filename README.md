@@ -28,6 +28,7 @@ This template features a responsive layout, dark & light theme, offcanvas on mob
 - Bootstrap 5 - Latest version with all modern utilities
 - Responsive - Mobile-optimized layouts across all devices
 - Sidebar Menu - Off canvas navigation on smaller screen sizes.
+    - (Uncomment code in `scripts.js Line: 18-20` to make the offcavus persist between refreshes)
 - Dark/Light Mode - Theme switching with localStorage persistence (must uncomment in script)
 - Page loader/unloader
 - Mobile Features
@@ -89,7 +90,7 @@ This template features a responsive layout, dark & light theme, offcanvas on mob
 *The other directories and files are for simple development.*
 
 ## Customization Notes: 
-Here are a few suggestions when making your edits when creating you custom style and design. Everthing listed should be simple to understand. If you have more in-depth questions about how to make changes to the layout and base styles remember to check out [The Official Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for more information.
+Here are a few suggestions when customizing the template. Everthing listed should be simple to understand. If you have more in-depth questions about how to make changes to the layout and base styles remember to check out [The Official Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for more information.
 
 ***To be included***
 

@@ -1,14 +1,14 @@
 # N-Gen Admin Dashboard Template
-A free responsive admin template built with Bootstrap 5 and inspired by Start Bootstrap's [Simple Sidebar](https://github.com/startbootstrap/startbootstrap-simple-sidebar) & [SB Admin](https://github.com/startbootstrap/startbootstrap-sb-admin) templates.
+A sleek and fully responsive free **Bootstrap 5** admin dashboard template built with touch-swipe event listener for the offcavus on mobile devices. It's a great starting-kit for developing modern and robust, user-friendly, scalable, and feature-rich web applications.
 
 ![N-Gen Admin Dashboard Preview](https://ngendesign.com/templates/ngen-admin-dashboard-v4.png)
 
 ## A Great Starter Template
-This template features a responsive layout with: a dark & light theme, navigation menu on the left for mobile devices, & wrapper `main` element to keep the content orginized. Made to be simple by sticking with Bootstrap 5's layout framework. With little custom CSS and instead extending it's styling and using HTML5 semantic tags, makes it easy to customization for your own project. It also doesn't use any JavaScript libraries cluttering your scripts and locking you into using premade JavaScript UI functions. It's a great starter template for small project or to use for the `Views` or `temaplates` in small custom application using frameworks like; CodeIgniter 4, CakePHP, or Symfony. It looks great on mobile screen all the way up to desktop monitors. Feel free to customize it and use it in your next awesome web application project.  
+This template features a responsive layout with: a dark & light theme, toggleable, offcanvas navbar mobile devices, and a wrapper `#page-content-wrapper` to keep the content orginized. It's made to be simple by using minimal custom CSS and instead extending Bootstrap's styling framewrok. While also incorperating HTML5 semantic tags, its extremely easy to customization for your own project. To prevent cluttering your scripts and locking you into using premade JavaScript functions, it doesn't use any large JavaScript libraries. Gving you the ability to add you own event triggers and mechanics. It's a great starter template for small project or to use for the `Views` or `temaplates` in small custom application using frameworks like; CodeIgniter 4, CakePHP, or Symfony. It looks great on mobile screen all the way up to desktop monitors. Feel free to customize it and use it in your next awesome web application project.  
 
 **[View Live Preview](https://admin-template.ngendesign.com/)**
 
-![Version](https://img.shields.io/badge/version-1.2.0-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-1.5.0-blue?style=for-the-badge)
 ![Static Badge](https://img.shields.io/badge/Status-Active-red?style=for-the-badge)
 [![Static Badge](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
@@ -28,7 +28,7 @@ This template features a responsive layout with: a dark & light theme, navigatio
 - Bootstrap 5 - Latest version with all modern utilities
 - Responsive - Mobile-optimized layouts across all devices
 - Sidebar Menu - Off canvas navigation on smaller screen sizes.
-- Dark/Light Mode - Theme switching with localStorage persistence
+- Dark/Light Mode - Theme switching with localStorage persistence (must uncomment in script)
 - Page loader/unloader
 - Mobile Features
     - Swipe left to open sidebar
@@ -89,18 +89,6 @@ The following directories and files make up template:
 ```
 
 The other directories and files and for simple development.
-
-## Changelog
-All the notable changes to the template will be listed here. Most change will be style, HTML, or JavaScript updates. If you have any suggestion feel free to suggest them.
-
-## v1.2.0
-## 2026-03-20
-### Added
-- New **400x400px** user avatar images (*feel free to use them*)
-- Top Right dropdown menu header (for username or account info) 
-
-### Changed
-- Profile pages Tabs: Projects, Tasks & Teams
 
 ## Customization Notes: 
 Here are a few suggestions when making your edits when creating you custom style and design. Everthing listed should be simple to understand. If you have more in-depth questions about how to make wticks to the layout and base style remember to check out [The Official Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for more information.

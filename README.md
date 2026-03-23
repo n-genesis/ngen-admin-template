@@ -52,7 +52,6 @@ This template features a responsive layout with: a dark & light theme, toggleabl
 - [ ] Remove blank & unused CSS styles
 
 ## 📂 Project Structure
-The following directories and files make up template:
 
 ```text
 .
@@ -75,8 +74,8 @@ The following directories and files make up template:
 │   │   ├── 📄 chart-area-demo.js
 │   │   ├── 📄 chart-bar-demo.js
 │   └── favicon.ico
-├── 🔧 scripts/                         # simple node.js http server
-│   └── ⚙️ server.js
+├── 🔧 scripts/                         
+│   └── ⚙️ server.js                    # simple node.js http server
 ├── 📄 index.html
 ├── 📄 profile.html
 ├── 📄 page.html
@@ -88,21 +87,24 @@ The following directories and files make up template:
 └── 📜 LICENSE.md                       # MIT License
 ```
 
-The other directories and files and for simple development.
+*The other directories and files are for simple development.*
 
 ## Customization Notes: 
-Here are a few suggestions when making your edits when creating you custom style and design. Everthing listed should be simple to understand. If you have more in-depth questions about how to make wticks to the layout and base style remember to check out [The Official Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for more information.
+Here are a few suggestions when making your edits when creating you custom style and design. Everthing listed should be simple to understand. If you have more in-depth questions about how to make changes to the layout and base styles remember to check out [The Official Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/) for more information.
 
+***To be included***
 
 ## Using Simple Server  
 **Note:** You need Node.js and npm to be installed on your system. You can download Node.js and follow the instructions on how to do that on [nodejs.org](http://nodejs.org/).
 
-Open your terminal under the project root run the following commands:
+Open your terminal under the project root run the following commands:  
 
+#### Install dependencies
 ```
-# Install dependencies
 npm install
-# Start server
+```
+#### Start server
+```
 npm run start-server
 ```
 

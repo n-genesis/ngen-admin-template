@@ -1,5 +1,5 @@
 # N-Gen Admin Dashboard Template
-A sleek and fully responsive Free **Bootstrap 5** Admin Dashboard Template with swipe left event on mobile screens to display the offcavus. It's a great starter-kit for developing a modern, user-friendly, and customizable feature-rich front-end for your web applications.
+A sleek and fully responsive Free **Bootstrap 5** Admin Dashboard Template with swipe left event on mobile screens to display the offcanvas. It's a great starter-kit for developing a modern, user-friendly, and customizable feature-rich front-end for your web applications.
 
 ![N-Gen Admin Dashboard Preview](https://ngendesign.com/templates/ngen-admin-dashboard-v4.png)
 
@@ -28,11 +28,11 @@ This template features a responsive layout, dark & light theme, offcanvas on mob
 - Bootstrap 5 - Latest version with all modern utilities
 - Responsive - Mobile-optimized layouts across all devices
 - Sidebar Menu - Off canvas navigation on smaller screen sizes.
-    - (Uncomment code in `scripts.js Line: 18-20` to make the offcavus persist between refreshes)
+    - (Uncomment code in `scripts.js Line: 18-20` to make the offcanvas persist between refreshes)
 - Dark/Light Mode - Theme switching with localStorage persistence (must uncomment in script)
 - Page loader/unloader
 - Mobile Features
-    - Touch-swipe event listener for the offcavus on mobile devices
+    - Touch-swipe event listener for the offcanvas on mobile devices
 - Chart.js (For dashboard example)
 
 ### 📝 Template Pages 

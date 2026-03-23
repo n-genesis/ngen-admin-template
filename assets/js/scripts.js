@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', event => {
     /**
      * Toggle the side navigation
      * 
-     * TODO: Fix icon change on toggle when tapping on #page-content to close offcavus
+     * TODO: Fix icon change on toggle when tapping on #page-content to close offcanvas
      */
     const sidebarToggle = document.body.querySelector('#sidebarToggle');
     if (sidebarToggle) {

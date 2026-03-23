@@ -77,7 +77,7 @@ This template features a responsive layout with: a dark & light theme, toggleabl
 │   └── ⚙️ server.js                    # simple node.js http server
 ├── 📄 index.html
 ├── 📄 profile.html
-├── 📄 page.html
+├── 📄 blank-page.html
 ├── 📄 401.html
 ├── 📄 404.html
 ├── 📄 500.html

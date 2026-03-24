@@ -4,7 +4,7 @@ A sleek and fully responsive Free **Bootstrap 5** Admin Dashboard Template with 
 ![N-Gen Admin Dashboard Preview](https://ngendesign.com/templates/ngen-admin-dashboard-v4.png)
 
 ## A Great Starter Template
-This template features a responsive layout, dark & light theme, offcanvas on mobile devices, and a wrapper `#page-content` element to keep your content orginized. It's made to be simple by using minimal custom CSS and instead extending Bootstrap's framewrok. It also uses HTML5 tags to help keep your page organized and makes its extremely easy to customization for your own project. To give you the ability to add you own event triggers and mechanics, it doesn't use any large JavaScript libraries to prevent cluttering your scripts and locking you into using premade functions. All hands down it's a simple starter template for `Views` or `temaplates` in small application using frameworks like; CodeIgniter 4, CakePHP, or Symfony. It looks great on mobile screen all the way up to desktop monitors. Feel free to customize it and use it in your next awesome application.  
+This template features a responsive layout, dark & light theme, offcanvas on mobile devices, and a wrapper `#main-content` element to keep your content orginized. It's made to be simple by using minimal custom CSS and instead extending Bootstrap's framewrok. It also uses HTML5 tags to help keep your page organized and makes its extremely easy to customization for your own project. To give you the ability to add you own event triggers and mechanics, it doesn't use any large JavaScript libraries to prevent cluttering your scripts and locking you into using premade functions. All hands down it's a simple starter template for `Views` or `temaplates` in small application using frameworks like; CodeIgniter 4, CakePHP, or Symfony. It looks great on mobile screen all the way up to desktop monitors. Feel free to customize it and use it in your next awesome application.  
 
 **[View Live Preview](https://admin-template.ngendesign.com/)**
 
@@ -44,6 +44,20 @@ This template features a responsive layout, dark & light theme, offcanvas on mob
     - Login, rigister, and password reset
 - Error Pages
     - 401, 404, and 500
+
+## Changelog
+All the notable changes to the template will be listed here. Most change will be style, HTML, or JavaScript updates. If you have any suggestion feel free to suggest them.
+
+## 1.5.0
+
+### Added
+- New **400x400px** user avatar images (*feel free to use them*)
+- Top Right dropdown menu header (for username or account info) 
+
+### Changed
+- Profile pages Tabs: Projects, Tasks & Teams
+- Refactored the CSS and combined the offcanvas style into one stylesheet
+- Pages to use HTML5 tags for semantic structure 
 
 ### 📋 TODO:
 - [ ] Script better touch-swipe left function

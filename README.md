@@ -62,8 +62,8 @@ All the notable changes to the template will be listed here. Most change will be
 ### 📋 TODO:
 - [ ] Script better touch-swipe left function
 - [ ] Improve dark theme styles
-- [ ] Add more example pages
-- [ ] Remove blank & unused CSS styles
+- [x] Add more example pages
+- [x] Remove blank & unused CSS styles
 
 ## 📂 Project Structure
 

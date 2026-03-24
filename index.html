@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="A cool description for your application.">
-    <meta name="author" content="App Name">
-    <title>N-Gen Admin | Dashboard Page</title>
+    <meta name="description" content="A description for your application.">
+    <meta name="author" content="Admin Name">
+    <title>N-Gen Admin | Dashboard</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <!-- Bootstrap CSS-->
@@ -22,27 +22,28 @@
 
 <body>
     <div class="d-flex" id="wrapper">
-        <!-- Side Navbar-->
-        <aside class="border-end" id="sidebar-wrapper">
-            <div id="sidebar_v2" class="sidebar_v2 d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary overflow-auto">
-                <a href="./"
-                    class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                    <i class="bi bi-bootstrap-fill bi-logo me-2"></i> <span class="fs-4">N-Gen Admin</span> </a>
-                <hr style="margin-top: 6px !important;">
 
-                <!-- Main Side Navbar -->
+        <!-- Sidebar-wrapper / offcanvas of mobile -->
+        <aside id="sidebar-wrapper" class="border-end">
+            <nav id="sidebar-nav" class="sidebar d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary overflow-auto" aria-label="Side Navigation">
+                <a href="./" class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <i class="bi bi-bootstrap-fill bi-logo me-2"></i> <span class="fs-4">N-Gen Admin</span>
+                </a>
+                <hr style="margin-top: 6px !important;">
+                <!-- Navbar -->
                 <ul class="nav nav-pills flex-column mb-auto" id="sidebarMenu">
+                    <!-- Top Nav -->
                     <li>
                         <a href="index.html" class="nav-link active">
-                            <i class="bi bi-columns me-2"></i> Dashboard </a>
+                            <i class="bi bi-columns me-2"></i> Dashboard</a>
                     </li>
                     <li>
                         <a href="profile.html" class="nav-link link-body-emphasis">
-                            <i class="bi bi-person"></i> Profile </a>
+                            <i class="bi bi-person"></i> Profile</a>
                     </li>
                     <li>
                         <a href="folder.html" class="nav-link link-body-emphasis">
-                            <i class="bi bi-folder2 me-2"></i> Folder </a>
+                            <i class="bi bi-folder2 me-2"></i> Folder</a>
                     </li>
                     <li>
                         <a href="blank-page.html" class="nav-link link-body-emphasis">
@@ -94,35 +95,31 @@
                             </ul>
                         </div>
                     </li>
-                    <!-- Modal Example-->
                     <li>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            class="nav-link link-body-emphasis">
-                            <i class="bi bi-copy me-2"></i> Modal </a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link link-body-emphasis">
+                            <i class="bi bi-copy"></i> Modal</a>
                     </li>
-                    <!-- END Sidebar Navigation -->
-
+                    <!-- li with border-top instead of hr -->
                     <li class="border-top my-3"></li>
-
-                    <li class="mb-1"> <button
-                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                    <!-- Botton Nav -->
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
                             data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
                             Account
                         </button>
                         <div class="collapse" id="account-collapse">
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="#"
-                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a>
+                                <li>
+                                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a>
                                 </li>
-                                <li><a href="#"
-                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a>
+                                <li>
+                                    <a href="#"class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a>
                                 </li>
-                                <li><a href="#"
-                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a>
+                                <li>
+                                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a>
                                 </li>
-                                <li><a href="#"
-                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign
-                                        out</a>
+                                <li>
+                                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign out</a>
                                 </li>
                             </ul>
                         </div>
@@ -131,11 +128,11 @@
 
                 <hr>
 
-                <!-- Bottom Side Navbar -->
+                <!-- Bottom sidebar dropdown -->
                 <div class="dropdown">
                     <a href="#"
                         class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
-                        data-bs-toggle="dropdown" aria-expanded="false"> <img src="assets/images/user.png" alt=""
+                        data-bs-toggle="dropdown" aria-expanded="false"> <img src="assets/images/user.png" alt="Guest User"
                             width="32" height="32" class="rounded-circle me-2"> <strong>Guest</strong> </a>
                     <ul class="dropdown-menu text-small shadow">
                         <li>
@@ -144,180 +141,196 @@
                             </a>
                         </li>
                         <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Activity Log</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
                     </ul>
                 </div>
-            </div>
+            </nav>
         </aside>
 
-        <!-- Main page content wrapper-->
-        <main id="page-content-wrapper">
+        <!-- Content Wrapper-->
+        <div id="content-wrapper">
 
-            <!-- Top Nabar -->
-            <nav id="navbar-main" class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-start">
-                <div class="container-fluid">
-                    <!-- Mobile navbar collapes toggle -->
-                    <button class="btn btn-secondary" id="sidebarToggle"><i class="bi bi-grid"></i></button>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- Nabar Items -->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                            <li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                <!-- Dropdown -->
-                                <div aria-labelledby="dropdownUser" class="dropdown-menu dropdown-menu-end">
-                                    <h6 class="dropdown-header">
-                                        <div class="dropdown-user-details">
-                                            <div class="dropdown-user-details-name">@username</div>
-                                            <div class="dropdown-user-details-email">no-reply@email.com</div>
-                                        </div>
-                                    </h6>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Settings</a>
-                                    <a class="dropdown-item" href="#">Activity Log</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Logout</a>
-                                </div>
-                            </li>
-                        </ul>
+            <!-- Header Nav -->
+            <header id="header-content">
+                <nav id="header-nav" class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-start" aria-label="Main Navigation">
+                    <div class="container-fluid">
+                        <!-- Mobile navbar collapes toggle -->
+                        <button class="btn btn-secondary" id="sidebarToggle"><i class="bi bi-grid"></i></button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Nabar Items -->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                    <!-- Dropdown -->
+                                    <div aria-labelledby="dropdownUser" class="dropdown-menu dropdown-menu-end">
+                                        <h6 class="dropdown-header">
+                                            <div class="dropdown-user-details">
+                                                <div class="dropdown-user-details-name"><b>@username</b></div>
+                                                <div class="dropdown-user-details-email">no-reply@email.com</div>
+                                            </div>
+                                        </h6>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Settings</a>
+                                        <a class="dropdown-item" href="#">Activity Log</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Logout</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </header>
 
-            <!-- Page content-->
-            <main id="page-content" class="container-fluid pt-3 pb-5 min-vh-100">
+            <!-- Main-content -->
+            <main id="main-content" class="container-fluid pt-3 pb-5 min-vh-100">
                 <h1>Dashboard</h1>
-                <div class="row">
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card bg-primary text-white mb-4">
-                            <div class="card-body">Primary Card</div>
-                            <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="#">View Details</a>
-                                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                <!-- Color Cards -->
+                <section>
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6">
+                            <article class="card bg-primary text-white mb-4">
+                                <div class="card-body">Primary Card</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a class="small text-white stretched-link" href="#">View Details</a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <article class="card bg-warning text-white mb-4">
+                                <div class="card-body">Warning Card</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a class="small text-white stretched-link" href="#">View Details</a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <article class="card bg-success text-white mb-4">
+                                <div class="card-body">Success Card</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a class="small text-white stretched-link" href="#">View Details</a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <article class="card bg-danger text-white mb-4">
+                                <div class="card-body">Danger Card</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a class="small text-white stretched-link" href="#">View Details</a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <!-- Chart.js Demos -->
+                <section>
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <i class="bi bi-graph-up"></i> Area Chart Example
+                                </div>
+                                <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <i class="bi bi-bar-chart-line-fill"></i> Bar Chart Example
+                                </div>
+                                <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card bg-warning text-white mb-4">
-                            <div class="card-body">Warning Card</div>
-                            <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="#">View Details</a>
-                                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                </section>
+                <!-- Table Hoverable -->
+                <section>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <i class="bi bi-table"></i>
+                                    Table Hoverable
+                                </div>
+                                <div class="card-body table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td colspan="2">Larry the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card bg-success text-white mb-4">
-                            <div class="card-body">Success Card</div>
-                            <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="#">View Details</a>
-                                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card bg-danger text-white mb-4">
-                            <div class="card-body">Danger Card</div>
-                            <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="#">View Details</a>
-                                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="bi bi-graph-up"></i> Area Chart Example
-                            </div>
-                            <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="bi bi-bar-chart-line-fill"></i> Bar Chart Example
-                            </div>
-                            <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <i class="bi bi-table"></i>
-                            Table Hoverable
-                        </div>
-                        <div class="card-body table-responsive">
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+                </section>
                 <!-- Preloader <div id="preloader"></div> -->
             </main>
 
-            <footer id="page-footer" class="container-fluid">
-                <div class="d-flex flex-wrap justify-content-between align-items-center pt-2 pb-3 my-4 border-top">
-                    <p class="col-md-4 mb-0 text-body-secondary">&copy;
+            <!-- Footer-content -->
+            <footer id="footer-content" class="container-fluid">
+                <div class="d-flex flex-wrap justify-content-between align-items-center pt-3 pb-4 border-top">
+                    <p class="text-body-secondary mb-0">&copy;
                         <script>
                             document.write(new Date().getFullYear());
                         </script> N-Gen Admin
                     </p>
-                    <ul class="nav col-md-4 justify-content-end text-decoration-none">
-                        <li class="nav-item"><a href="#" class="nav-link text-body-secondary px-2">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-body-secondary px-2">FAQs</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-body-secondary px-2">About</a></li>
+                    <ul class="list-inline text-decoration-none mb-0">
+                        <li class="list-inline-item"><a href="#" class="nav-link text-body-secondary px-2">Home</a></li>
+                        <li class="list-inline-item"><a href="#" class="nav-link text-body-secondary px-2">Link</a></li>
+                        <li class="list-inline-item"><a href="#" class="nav-link text-body-secondary px-2 dis" aria-disabled="true">About</a></li>
                     </ul>
                 </div>
             </footer>
-            <!-- /END Footer -->
-        </main>
+
+        </div>
     </div>
+
     <!-- Scroll To Top -->
     <button type="button" class="btn btn-primary btn-floating btn-lg" id="btn-back-to-top">
         <i class="bi bi-arrow-up"></i>
     </button>
-    <!-- Modal -->
+
+    <!-- Example Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -391,8 +404,6 @@
     <!-- Core theme JS-->
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/main.js"></script>
-
-
 </body>
 
 </html>

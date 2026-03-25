@@ -52,18 +52,21 @@ All the notable changes to the template will be listed here. Most change will be
 
 ### Added
 - New **400x400px** user avatar images (*feel free to use them*)
-- Top Right dropdown menu header (for username or account info) 
+- Top Right dropdown menu header (for username or account info)
+- Avatar tooltips
 
 ### Changed
 - Profile pages Tabs: Projects, Tasks & Teams
 - Refactored the CSS and combined the offcanvas style into one stylesheet
-- Pages to use HTML5 tags for semantic structure 
+- Pages to use HTML5 tags for semantic structure
+- Updated Task Item Card styles
 
 ### 📋 TODO:
 - [ ] Script better touch-swipe left function
 - [ ] Improve dark theme styles
 - [x] Add more example pages
 - [x] Remove blank & unused CSS styles
+- [ ] vertically align options for Task Cards
 
 ## 📂 Project Structure
 
@@ -97,7 +100,7 @@ All the notable changes to the template will be listed here. Most change will be
 ├── 📄 404.html
 ├── 📄 500.html
 ├── 📄 index.html
-├── 📄 folder.html
+├── 📄 folders-and-files.html
 └── 📜 LICENSE.md                       # MIT License
 ```
 

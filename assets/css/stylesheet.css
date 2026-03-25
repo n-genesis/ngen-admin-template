@@ -358,6 +358,13 @@ body.ng-sidenav-toggled #wrapper #content-wrapper {
   position: fixed;
 }
 
+/* LARGE SCREEN STYLES (Desktop) */
+@media (min-width: 992px) {
+  #sidebar-wrapper {
+    transform: translateX(0px);
+  }
+}
+
 #sidebar-wrapper .sidebar-heading {
   padding: 0.875rem 1.25rem;
   font-size: 1.2rem;

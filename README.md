@@ -64,12 +64,12 @@ All the notable changes to the template will be listed here. Most change will be
 ## 1.6.0
 
 ### Updated
-- 📱 *Swip-left offcanvs* Better touch detections
+- 📱 *Swip offcanvs* Swipe to open and close menu
 - Refactored the CSS and combined the offcanvas style into one stylesheet
 
 
 ### 📋 TODO:
-- [ ] Script better touch-swipe left function
+- [ ] *Script better touch-swipe left function*
 - [ ] Improve dark theme styles
 - [x] Add more example pages
 

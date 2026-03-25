@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', event => {
     /**
      * Toggle the side navigation
      * 
-     * TODO: Fix icon change on toggle when tapping on #page-content to close offcanvas
+     * TODO: Fix icon change on toggle when tapping on #main-content to close offcanvas
      */
     const sidebarToggle = document.body.querySelector('#sidebarToggle');
     if (sidebarToggle) {
@@ -79,8 +79,8 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     }, { passive: false });
 
-    // Close Sidebar if #page-content is tapped
-    document.getElementById('page-content').addEventListener('touchstart', event => {
+    // Close Sidebar if #main-content is tapped
+    document.getElementById('main-content').addEventListener('touchstart', event => {
         toggleSideBtn();
         if (document.body.classList.contains('ng-sidenav-toggled')) {
             document.body.classList.toggle('ng-sidenav-toggled');

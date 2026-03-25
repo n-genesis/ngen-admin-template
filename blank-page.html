@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="This is going to be some type od description for the BootSnippets website.">
-    <meta name="author" content="App Name">
+    <meta name="author" content="Admin Name">
     <title>N-Gen Admin | Blank Page</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -15,32 +16,31 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- Main Styles -->
     <link href="assets/css/stylesheet.css" rel="stylesheet">
-    <!-- Sidebar Styles -->
-    <link href="assets/css/sidebar_wrapper.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="d-flex" id="wrapper">
-        <!-- Side Navbar-->
-        <aside class="border-end" id="sidebar-wrapper">
-            <div id="sidebar" class="sidebar d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary overflow-auto">
-                <a href="./"
-                    class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                    <i class="bi bi-bootstrap-fill bi-logo me-2"></i> <span class="fs-4">N-Gen Admin</span> </a>
+        <!-- Sidebar-wrapper / offcanvas for mobile -->
+        <aside id="sidebar-wrapper" class="border-end">
+            <nav id="sidebar-nav" class="sidebar d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary overflow-auto" aria-label="Side Navigation">
+                <a href="./" class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <i class="bi bi-bootstrap-fill bi-logo me-2"></i> <span class="fs-4">N-Gen Admin</span>
+                </a>
                 <hr style="margin-top: 6px !important;">
-
-                <!-- Main Side Navbar -->
-                <ul class="nav nav-pills flex-column mb-auto" id="sidebarMenu">
+                <!-- Navbar -->
+                <ul id="sidebar-menu" class="nav nav-pills flex-column mb-auto">
+                    <!-- Top Nav -->
                     <li>
                         <a href="index.html" class="nav-link link-body-emphasis">
-                            <i class="bi bi-columns me-2"></i> Dashboard </a>
+                            <i class="bi bi-columns me-2"></i> Dashboard</a>
                     </li>
                     <li>
                         <a href="profile.html" class="nav-link link-body-emphasis">
-                            <i class="bi bi-person"></i> Profile </a>
+                            <i class="bi bi-person"></i> Profile</a>
                     </li>
                     <li>
-                        <a href="folder.html" class="nav-link link-body-emphasis">
-                            <i class="bi bi-folder2 me-2"></i> Folder </a>
+                        <a href="folders-and-files.html" class="nav-link link-body-emphasis">
+                            <i class="bi bi-folder2 me-2"></i> Folders &amp; Files</a>
                     </li>
                     <li>
                         <a href="blank-page.html" class="nav-link active">
@@ -55,7 +55,7 @@
                             <i class="bi bi-chevron-down"></i> <!-- Optional Icon -->
                         </a>
                         <!-- Collapsible Sub-Nav -->
-                        <div class="collapse" id="submenu1" data-bs-parent="#sidebarMenu">
+                        <div id="submenu1" class="collapse" data-bs-parent="#sidebar-menu">
                             <ul class="nav flex-column ms-4">
                                 <li class="nav-item">
                                     <a class="nav-link small link-body-emphasis" href="401.html">401 Page</a>
@@ -78,7 +78,7 @@
                             <i class="bi bi-chevron-down"></i> <!-- Optional Icon -->
                         </a>
                         <!-- Collapsible Sub-Nav -->
-                        <div class="collapse" id="submenu2" data-bs-parent="#sidebarMenu">
+                        <div id="submenu2" class="collapse" data-bs-parent="#sidebar-menu">
                             <ul class="nav flex-column ms-4">
                                 <li class="nav-item">
                                     <a class="nav-link small link-body-emphasis" href="login.html">Login</a>
@@ -90,50 +90,47 @@
                                     <a class="nav-link small link-body-emphasis" href="forgot.html">Forgot Password</a>
                                 </li>
                             </ul>
-                        </div>
+                        </div><!-- /.collapse -->
                     </li>
-                    <!-- Modal Example-->
                     <li>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            class="nav-link link-body-emphasis">
-                            <i class="bi bi-copy me-2"></i> Modal </a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link link-body-emphasis">
+                            <i class="bi bi-copy"></i> Modal
+                        </a>
                     </li>
-                    <!-- END Sidebar Navigation -->
-
+                    <!-- li with border-top instead of hr -->
                     <li class="border-top my-3"></li>
-
-                    <li class="mb-1"> <button
-                            class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                    <!-- Botton Nav -->
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
                             data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
                             Account
                         </button>
-                        <div class="collapse" id="account-collapse">
+                        <div id="account-collapse" class="collapse" >
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="#"
-                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a>
+                                <li>
+                                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a>
                                 </li>
-                                <li><a href="#"
-                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a>
+                                <li>
+                                    <a href="#"class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a>
                                 </li>
-                                <li><a href="#"
-                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a>
+                                <li>
+                                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a>
                                 </li>
-                                <li><a href="#"
-                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign
-                                        out</a>
+                                <li>
+                                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign out</a>
                                 </li>
                             </ul>
-                        </div>
+                        </div><!-- /.collapse -->
                     </li>
-                </ul>
+                </ul><!-- /#sidebar-menu .nav -->
 
                 <hr>
 
-                <!-- Bottom Side Navbar -->
+                <!-- Bottom sidebar dropdown -->
                 <div class="dropdown">
                     <a href="#"
                         class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
-                        data-bs-toggle="dropdown" aria-expanded="false"> <img src="assets/images/user.png" alt=""
+                        data-bs-toggle="dropdown" aria-expanded="false"> <img src="assets/images/user.png" alt="Guest User"
                             width="32" height="32" class="rounded-circle me-2"> <strong>Guest</strong> </a>
                     <ul class="dropdown-menu text-small shadow">
                         <li>
@@ -142,48 +139,63 @@
                             </a>
                         </li>
                         <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Activity Log</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
                     </ul>
-                </div>
-            </div>
+                </div><!-- /.dropdown -->
+            </nav>
         </aside>
 
         <!-- Page content wrapper-->
         <div id="content-wrapper">
-            <!-- Top navigation-->
-            <nav id="header-nav" class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-start">
-                <div class="container-fluid">
-                    <button class="btn btn-secondary" id="sidebarToggle"><i class="bi bi-grid"></i></button>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation"><span
-                            class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                            <li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </li>
-                        </ul>
+            <!-- Header Nav -->
+            <header id="header-content">
+                <nav id="header-nav" class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-start" aria-label="Main Navigation">
+                    <div class="container-fluid">
+                        <!-- Mobile navbar collapes toggle -->
+                        <button class="btn btn-secondary" id="sidebarToggle"><i class="bi bi-grid"></i></button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbar-content" aria-controls="navbar-content"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Nabar Items -->
+                        <div id="navbar-content" class="collapse navbar-collapse">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                    <!-- Dropdown -->
+                                    <div aria-labelledby="dropdownUser" class="dropdown-menu dropdown-menu-end">
+                                        <h6 class="dropdown-header">
+                                            <div class="dropdown-user-details">
+                                                <div class="dropdown-user-details-name"><b>@username</b></div>
+                                                <div class="dropdown-user-details-email">no-reply@email.com</div>
+                                            </div>
+                                        </h6>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Settings</a>
+                                        <a class="dropdown-item" href="#">Activity Log</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Logout</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div><!-- /#navbar-conent -->
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </header>
+
             <!-- Page content-->
-            <main id="main-content" class="container-fluid pt-3 pb-5 min-vh-100">
-                <h1>Simple Sidebar</h1>
-                <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the above, the menu will change.</p>
+            <main id="main-content" class="container-fluid pt-3 pb-5 min-vh-100" aria-label="Main content">
+                <h1>Blank Page</h1>
+                <p>The starting state of the menu will appear collapsed on smaller screens, and will appear
+                    non-collapsed on larger screens. When toggled using the above button, the menu will change.</p>
                 <p>
                     Make sure to keep all page content within the
                     <code>#main-content</code>
@@ -191,32 +203,33 @@
                     <code>#sidebarToggle</code>
                     ID which will toggle the menu when clicked.
                 </p>
-                <!-- Preloader-->
-                <div id="preloader"></div>
+                <!-- Preloader <div id="preloader"></div> -->
             </main>
-            <!-- Footer -->
+
+            <!-- Footer-content -->
             <footer id="footer-content" class="container-fluid">
-                <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                    <p class="col-md-4 mb-0 text-body-secondary">&copy;
+                <div class="d-flex flex-wrap justify-content-between align-items-center pt-3 pb-4 border-top">
+                    <p class="text-body-secondary mb-0">&copy;
                         <script>
                             document.write(new Date().getFullYear());
                         </script> N-Gen Admin
                     </p>
-                    <ul class="nav col-md-4 justify-content-end text-decoration-none">
-                        <li class="nav-item"><a href="#" class="nav-link text-body-secondary px-2">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-body-secondary px-2">FAQs</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-body-secondary px-2">About</a></li>
+                    <ul class="list-inline text-decoration-none mb-0">
+                        <li class="list-inline-item"><a href="#" class="nav-link text-body-secondary px-2">Home</a></li>
+                        <li class="list-inline-item"><a href="#" class="nav-link text-body-secondary px-2">Link</a></li>
+                        <li class="list-inline-item"><a href="#" class="nav-link text-body-secondary px-2 disabled" aria-disabled="true">Disabled</a></li>
                     </ul>
                 </div>
-            </footer>
-            <!-- /END Footer -->
-        </div>
-    </div>
+            </footer><!-- /#footer-content-->
+        </div><!-- /#content-wrapper -->
+    </div><!-- /#wrapper -->
+
     <!-- Scroll To Top -->
-    <button type="button" class="btn btn-primary btn-floating btn-lg" id="btn-back-to-top">
+    <button type="button" class="btn btn-primary btn-floating btn-lg position-fixed bottom-0 end-0 me-3 mb-5 d-none" id="btn-back-to-top">
         <i class="bi bi-arrow-up"></i>
     </button>
-    <!-- Modal -->
+
+    <!-- Example Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -225,7 +238,11 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -234,6 +251,7 @@
             </div>
         </div>
     </div>
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

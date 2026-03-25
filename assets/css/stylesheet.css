@@ -1,28 +1,89 @@
-/*!
-* N-Gen Admin Dashboard v1.2.0 (https://ngendesign/templates/ngen-admin-dashboard)
-* File: stylesheet.css
-* Author: Andrew Nite
-* Date: October 25, 2025
-* Updated: 21st Marsh 2026
-* Description: Global styles for the N-Gen Admin Dashboard template using Bootstrap 5.3.x.
+/**
+ * N-Gen Admin Dashboard v1.2.0 (https://ngendesign/templates/ngen-admin-dashboard)
+ * File: stylesheet.css
+ * Author: Andrew Nite
+ * Version: 2.0.0
+ * Date: October 25, 2025
+ * Updated: 21st Marsh 2026
+ * Description: Global styles for the N-Gen Admin Dashboard template using Bootstrap 5.3.x.
+ * 
+ * TABLE OF CONTENTS
+ * -----------------
+ * 1. Reset & Base Styles
+ * 2. Variables & Theme
+ * 3. Typography
+ * 4. Layout & Grid
+ * 5. Components (Buttons, Cards, etc.)
+ * 6. Navigation
+ * 7. Media Queries
 */
 
-/*--------------------------------------------------------------
-# Scroll to top
---------------------------------------------------------------*/
-#btn-back-to-top {
-  position: fixed;
-  bottom: 46px;
-  right: 20px;
-  display: none; /* Hidden by default */
-}
-.img-account-profile {
-    height: 10rem;
+/*-------------------------------------------------------
+   1. RESET & BASE STYLES
+------------------------------------------------------- */
+body { 
+    background-color: #f8f9fa; 
 }
 
-/*--------------------------------------------------------------
-# Navigation tab Styles
---------------------------------------------------------------*/
+[data-bs-theme="dark"] body {
+    background-color: var(--bs-dark);
+}
+
+/*-------------------------------------------------------
+   2. VARIABLES & THEME
+------------------------------------------------------- */
+:root {
+  --bs-blue: #1e30f3;
+}
+
+/*-------------------------------------------------------
+   3. TYPOGRAPHY
+------------------------------------------------------- */
+
+
+
+/*-------------------------------------------------------
+   4. LAYOUT & GRID
+------------------------------------------------------- */
+
+/* --- body > div#wrapper --- */
+#wrapper {
+  overflow-x: hidden;
+}
+
+/* --- Content Wrapper --- */
+#content-wrapper {
+  position: relative;
+  left: 0px;
+  /* Push it to the right of the fixed element's width */
+  width: 100%;
+  /* Calculate remaining width */
+  height: 100vh;
+  /* Example height */
+  transition: all 0.25s ease-out;
+}
+
+/* --- Header Navbar --- */
+#header-nav {
+    
+}
+
+/* --- Main Content --- */
+#main-content {
+  
+}
+
+/* --- #footer-conter i.bi color --- */
+#content-wrapper #footer-content .bi {
+  color: var(--bs-black) !important;
+}
+
+/* --- #content-wrapper .sidebar-toggled --- */
+body.ng-sidenav-toggled #wrapper #content-wrapper {
+  left: 240px;
+}
+
+/* --- Navigation tab Styles --- */
 .nav-tabs-custom .nav-item .nav-link.active {
     color: #038edc;
 }
@@ -31,22 +92,8 @@
     border: none;
 }
 
-.nav-tabs-custom .nav-item .nav-link.active {
-    color: #038edc;
-}
-
-.avatar-group {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-left: 12px;
-}
-
 .nav-tabs-custom .nav-item {
     position: relative;
-    color: #343a40;
 }
 
 .nav-tabs-custom .nav-item .nav-link.active:after {
@@ -68,72 +115,47 @@
     transform: scale(0);
 }
 
-.nav-borders .nav-link.active {
-    color: #0061f2;
-    border-bottom-color: #0061f2;
+/* --- Work Activity Dark Theme Styles--- */
+[data-bs-theme="dark"] .nav-tabs-custom .nav-item .nav-link.active{
+    color: rgba(var(--bs-body-color-rgb));
 }
 
-.nav-borders .nav-link {
-    color: #69707a;
-    border-bottom-width: 0.125rem;
-    border-bottom-style: solid;
-    border-bottom-color: transparent;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
+/*-------------------------------------------------------
+   5. COMPONENTS
+------------------------------------------------------- */
 
-/*--------------------------------------------------------------
-# Card ReStyles
---------------------------------------------------------------*/
+/* --- Card ReStyles --- */
 .card {
     box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
     border-radius: 0;
 }
 
-.card .card-header {
-    font-weight: normal;
-}
-
-.card-header {
+.card-header,
+.card-footer {
     padding: 1rem 1.35rem;
 }
 
-.form-control,
-.dataTable-input {
-    display: block;
-    width: 100%;
-    padding: 0.875rem 1.125rem;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1;
-    color: #69707a;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #c5ccd6;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 0.35rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-/*--------------------------------------------------------------
-# Dashboard Card Styles
---------------------------------------------------------------*/
-.dashboard-card .card-body h5 {
+.card-body h5 {
     font-size: 1rem;
 }
 
-.dashboard-card .avatar-img {
+/* --- Card Avatar img, groups, and items --- */
+.card .avatar-sm {
+    height: 2rem;
+    width: 2rem;
+}
+
+.card .avatar {
+    height: 3rem;
+    width: 3rem;
+}
+
+.card .avatar-img {
     height: 7rem;
     width: 7rem;
 }
 
-.dashboard-card .avatar-group {
+.card .avatar-group {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -142,7 +164,7 @@
     padding-left: 12px;
 }
 
-.dashboard-card .avatar-group .avatar-group-item {
+.card .avatar-group .avatar-group-item {
     margin-left: -14px;
     border: 2px solid #fff;
     border-radius: 50%;
@@ -150,17 +172,11 @@
     transition: all .2s;
 }
 
-.dashboard-card .avatar-group .avatar-group-item a {
+.card .avatar-group .avatar-group-item a {
     text-decoration: none !important;
 }
 
-.dashboard-card .avatar-sm {
-    height: 2rem;
-    width: 2rem;
-}
-
-.card .avatar-title,
-.dashboard-card .avatar-title {
+.card .avatar-title {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -177,46 +193,41 @@
     width: 100%;
 }
 
-/*--------------------------------------------------------------
-# Dashboard Drive Cards
---------------------------------------------------------------*/
-.drive-card .avatar {
-    height: 3rem;
-    width: 3rem;
-}
-
-.drive-card .avatar-title {
-    columns: var(--bs-white);
-}
-/*--------------------------------------------------------------
-# Dashboard List styles
---------------------------------------------------------------*/
-
-.dashboard-card .project-list-table {
-    border-collapse: separate;
-    border-spacing: 0 12px
-}
-
-.dashboard-card .project-list-table tr {
-    background-color: #fff
-}
-
-.dashboard-card .table-nowrap td, .table-nowrap th {
+/* --- Table styles --- */
+.card .table-nowrap td {
     white-space: nowrap;
 }
-.dashboard-card .table-borderless>:not(caption)>*>* {
-    border-bottom-width: 0;
-}
-.dashboard-card .table>:not(caption)>*>* {
+
+.card .table>:not(caption)>*>* {
     padding: 0.75rem 0.75rem;
     background-color: var(--bs-table-bg);
     border-bottom-width: 1px;
     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }
 
-/*--------------------------------------------------------------
-# Work Activity 
---------------------------------------------------------------*/
+/* --- Card Task Item Styles --- */
+.card-task-item {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  cursor: pointer; /* Makes it feel clickable */
+}
+
+.card-task-item:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; /* Deeper shadow */
+  border-color: var(--bs-primary); /* Highlights the border with your primary color */
+}
+
+/* Dark Theme specific hover (optional) */
+[data-bs-theme="dark"] .card-task-item:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5) !important;
+  background-color: var(--bs-tertiary-bg); /* Subtle background shift in dark mode */
+}
+
+/* --- Dashboard Drive Cards --- */
+.drive-card .avatar-title {
+    columns: var(--bs-white);
+}
+
+/* --- Work Activity --- */
 .work-activity {
     position: relative;
     color: #74788d;
@@ -257,7 +268,7 @@
     font-weight: 500;
     color: #74788d;
     font-size: 12px;
-    min-width: 120px
+    min-width: 120px;
 }
 
 .work-activity .work-item::after {
@@ -268,198 +279,49 @@
     left: -26px;
     top: 3px;
     background-color: #fff;
-    border: 2px solid #038edc
+    border: 2px solid #038edc;
 }
 
-/*--------------------------------------------------------------
-# Account Profile
---------------------------------------------------------------*/
-.avatar-lg {
-    height: 4.5rem;
-    width: 4.5rem;
+/* --- Work Activity Dark Theme Styles --- */
+[data-bs-theme="dark"] .work-activity,
+[data-bs-theme="dark"] .work-activity .work-item::before {
+    color: rgba(var(--bs-body-color-rgb));
 }
 
-.img-thumbnail {
-    padding: .25rem;
-    background-color: #ecf2f5;
-    border: 1px solid #dee2e6;
-    border-radius: .25rem;
-    max-width: 100%;
-    height: auto;
+[data-bs-theme="dark"] .work-activity::before {
+    border-left-color: var(--bs-info);
 }
 
-.avatar-sm {
-    height: 2.25rem;
-    width: 2.25rem;
+[data-bs-theme="dark"] .work-activity .work-item::after {
+    border-color: var(--bs-info);
 }
 
-
-.avatar-md {
-    height: 3.5rem;
-    width: 3.5rem;
+/* --- Pagination --- */
+.pagination {
+  --bs-pagination-border-radius: 0;
 }
 
-
-.post-user-comment-box {
-    background-color: #f2f8fb;
-    margin: 0 -.75rem;
-    padding: 1rem;
-    margin-top: 20px;
-}
-
-
-.simplebar-wrapper {
-    overflow: hidden;
-    width: inherit;
-    height: inherit;
-    max-width: inherit;
-    max-height: inherit;
-}
-
-.simplebar-height-auto-observer-wrapper {
-    box-sizing: inherit !important;
-    height: 100%;
+/* --- Form Control --- */
+.form-control,
+.dataTable-input {
+    display: block;
     width: 100%;
-    max-width: 1px;
-    position: relative;
-    float: left;
-    max-height: 1px;
-    overflow: hidden;
-    z-index: -1;
-    padding: 0;
-    margin: 0;
-    pointer-events: none;
-    flex-grow: inherit;
-    flex-shrink: 0;
-    flex-basis: 0;
-}
-
-.social-list-item {
-    height: 2rem;
-    width: 2rem;
-    line-height: calc(2rem - 2px);
-    display: block;
-    border: 2px solid #adb5bd;
-    border-radius: 50%;
-    color: #adb5bd;
-}
-
-.comment-area-box .comment-area-btn {
-    background-color: #f2f8fb;
-    padding: 10px;
-    border: 1px solid #dee2e6;
-    border-top: none;
-    border-radius: 0 0 .2rem .2rem;
-}
-
-/*--------------------------------------------------------------
-# Profile Social and Card Styles
---------------------------------------------------------------*/
-#profile-social .profile-header {
-    background: linear-gradient(135deg, #4158D0 0%, #C850C0 100%);
-    height: 240px;
-}
-
-#profile-social .profile-pic {
-    width: 120px;
-    height: 120px;
-    border: 4px solid #fff;
-    margin-top: -60px;
+    padding: 0.875rem 1.125rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #69707a;
     background-color: #fff;
-}
-.profile-social-card {
-    margin-bottom: 35px;
-}
-
-.profile-social-card .nav>li>button {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-    font-weight: 300;
-    border-radius: 0;
-    bottom: -8px;
+    background-clip: padding-box;
+    border: 1px solid #c5ccd6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.35rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.profile-social-card .nav>li>button:focus,
-.profile-social-card .nav>li>button:hover {
-    text-decoration: none;
-    outline: none;
-}
-
-.profile-social-card .card-title {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.profile-social-card .card-body .card-link {
-    color: var(--bs-emphasis-color);
-}
-
-
-.profile-social-card .card-footer a {
-    text-decoration: none;
-    color: var(--bs-emphasis-color);
-}
-
-/*--------------------------------------------------------------
-# Profile Social Friends List
---------------------------------------------------------------*/
-.profile-social-card ul.friend-list {
-    margin: 0;
-    padding: 0;
-}
-
-.profile-social-card ul.friend-list li {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-}
-
-.profile-social-card ul.friend-list li:hover {
-    background: rgba(0, 0, 0, .1);
-    cursor: pointer;
-}
-
-.profile-social-card ul.friend-list .left img {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.profile-social-card ul.friend-list li {
-    padding: 10px;
-}
-
-.profile-social-card ul.friend-list .right h3 {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 0;
-}
-
-.profile-social-card ul.friend-list .right p {
-    font-size: 11px;
-    color: #6c757d;
-    margin: 0;
-}
-
-.text-blue {
-    color: #3afe;
-}
-
-.social-about .social-info {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.social-about p {
-    margin-bottom: 20px;
-}
-
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
+/* --- Preloader --- */
 #preloader {
     position: absolute;
     inset: 0;
@@ -499,4 +361,115 @@
     100% {
         transform: rotate(360deg);
     }
+}
+
+/*-------------------------------------------------------
+   6. NAVIGATION
+------------------------------------------------------- */
+
+/* --- Sidebar Wrapper --- */
+#sidebar-wrapper {
+  min-height: 100vh;
+  left: -15rem;
+  transition: all 0.25s ease-out;
+  position: fixed;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+/* --- #sidebar-wrapper .sidebar-toggled --- */
+body.ng-sidenav-toggled #wrapper #sidebar-wrapper {
+  left: 0;
+}
+
+/* --- #sidebar-nav & .sidebar --- */
+#sidebar-nav {
+  width: 240px;
+  height: 100vh;
+  padding-top: 8px !important;
+}
+
+#sidebar-nav .bi-logo {
+  font-size: 28px;
+}
+
+.sidebar .btn-toggle {
+  padding: .25rem .5rem;
+  color: var(--bs-emphasis-color);
+  background-color: transparent;
+}
+
+.sidebar .btn-toggle:hover,
+.sidebar .btn-toggle:focus {
+  color: rgba(var(--bs-emphasis-color-rgb), .85);
+  background-color: var(--bs-tertiary-bg);
+}
+
+.sidebar .btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+  margin-top: 4px;
+}
+
+[data-bs-theme="dark"] .sidebar .btn-toggle::before {
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+}
+
+.sidebar .btn-toggle[aria-expanded="true"] {
+  color: rgba(var(--bs-emphasis-color-rgb), .85);
+}
+
+.sidebar .btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+  margin-top: 0px;
+}
+
+.sidebar .btn-toggle-nav a {
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+}
+
+.sidebar .btn-toggle-nav a:hover,
+.sidebar .btn-toggle-nav a:focus {
+  background-color: var(--bs-tertiary-bg) !important;
+}
+
+
+/*-------------------------------------------------------
+   7. MEDIA QUERIES
+------------------------------------------------------- */
+
+/* --- @media #sidebar-wrapper & #content-wrapper  --- */
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    left: 0;
+  }
+
+  #content-wrapper {
+    left: 240px;
+    /* Push it to the right of the fixed element's width */
+    width: calc(100% - 240px);
+  }
+  /* --- #sidebar-wrapper .sidebar-toggled --- */
+  body.ng-sidenav-toggled #wrapper #sidebar-wrapper {
+    left: -15rem;
+  }
+
+  /* --- #content-wrapper .sidebar-toggled --- */
+  body.ng-sidenav-toggled #wrapper #content-wrapper {
+    left: 0;
+    width: 100%;
+  }
+
 }

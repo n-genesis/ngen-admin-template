@@ -73,9 +73,11 @@
 
     const scrollFunction = () => {
         if (myScrollableDiv.scrollTop > 20 || myScrollableDiv.scrollY > 20) {
-            mybutton.style.display = "block";
+            mybutton.classList.add('d-block');
+            mybutton.classList.remove('d-none');
         } else {
-            mybutton.style.display = "none";
+            mybutton.classList.add('d-none');
+            mybutton.classList.remove('d-block');
         }
     }
 

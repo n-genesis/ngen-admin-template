@@ -22,7 +22,7 @@
     <div class="d-flex" id="wrapper">
         <!-- Side Navbar-->
         <aside class="border-end" id="sidebar-wrapper">
-            <div id="sidebar_v2" class="sidebar_v2 d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary overflow-auto">
+            <div id="sidebar" class="sidebar d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary overflow-auto">
                 <a href="./"
                     class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                     <i class="bi bi-bootstrap-fill bi-logo me-2"></i> <span class="fs-4">N-Gen Admin</span> </a>
@@ -153,9 +153,9 @@
         </aside>
 
         <!-- Page content wrapper-->
-        <div id="page-content-wrapper">
+        <div id="content-wrapper">
             <!-- Top navigation-->
-            <nav id="navbar-main" class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-start">
+            <nav id="header-nav" class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-start">
                 <div class="container-fluid">
                     <button class="btn btn-secondary" id="sidebarToggle"><i class="bi bi-grid"></i></button>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -181,12 +181,12 @@
                 </div>
             </nav>
             <!-- Page content-->
-            <main id="page-content" class="container-fluid pt-3 pb-5 min-vh-100">
+            <main id="main-content" class="container-fluid pt-3 pb-5 min-vh-100">
                 <h1>Simple Sidebar</h1>
                 <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the above, the menu will change.</p>
                 <p>
                     Make sure to keep all page content within the
-                    <code>#page-content</code>
+                    <code>#main-content</code>
                     . The top navbar is optional, and just for demonstration. Just create an element with the
                     <code>#sidebarToggle</code>
                     ID which will toggle the menu when clicked.
@@ -195,7 +195,7 @@
                 <div id="preloader"></div>
             </main>
             <!-- Footer -->
-            <footer id="page-footer" class="container-fluid">
+            <footer id="footer-content" class="container-fluid">
                 <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                     <p class="col-md-4 mb-0 text-body-secondary">&copy;
                         <script>

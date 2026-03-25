@@ -94,7 +94,7 @@ All the notable changes to the template will be listed here. Most change will be
 ├── 🔧 scripts/                         
 │   └── ⚙️ server.js                    # simple node.js http server
 ├── 📄 index.html
-├── 📄 profile.html
+├── 📄 user-profile.html
 ├── 📄 blank-page.html
 ├── 📄 401.html
 ├── 📄 404.html

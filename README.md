@@ -8,7 +8,7 @@ This template features a responsive layout, dark & light theme, offcanvas on mob
 
 **[View Live Preview](https://admin-template.ngendesign.com/)**
 
-![Version](https://img.shields.io/badge/version-1.6.0-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-1.5.0-blue?style=for-the-badge)
 ![Static Badge](https://img.shields.io/badge/Status-Active-red?style=for-the-badge)
 [![Static Badge](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
@@ -60,12 +60,6 @@ All the notable changes to the template will be listed here. Most change will be
 - Pages to use HTML5 tags for semantic structure
 - Updated Task Item Card styles
 
-
-## 1.6.0
-
-### Updated
-- 📱 *Swip offcanvs* Swipe to open and close menu
-- Refactored the CSS and combined the offcanvas style into one stylesheet
 
 
 ### 📋 TODO:

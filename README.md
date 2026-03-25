@@ -8,7 +8,7 @@ This template features a responsive layout, dark & light theme, offcanvas on mob
 
 **[View Live Preview](https://admin-template.ngendesign.com/)**
 
-![Version](https://img.shields.io/badge/version-1.5.0-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-1.6.0-blue?style=for-the-badge)
 ![Static Badge](https://img.shields.io/badge/Status-Active-red?style=for-the-badge)
 [![Static Badge](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
@@ -36,12 +36,12 @@ This template features a responsive layout, dark & light theme, offcanvas on mob
 - Chart.js (For dashboard example)
 
 ### 📝 Template Pages 
-- Dashboard (Example Dashboard page)
-- Profile (Example user profile page)
-- Page (Blank page)
-- Folder (Example Folder/Directory page)
+- Dashboard
+- User Profile
+- Blank Page
+- Folder & Files (simple cards for directory list)
 - Authentication Page
-    - Login, rigister, and password reset
+    - Login, register, and forgot password
 - Error Pages
     - 401, 404, and 500
 
@@ -53,20 +53,25 @@ All the notable changes to the template will be listed here. Most change will be
 ### Added
 - New **400x400px** user avatar images (*feel free to use them*)
 - Top Right dropdown menu header (for username or account info)
-- Avatar tooltips
+- Avatar tooltips on Profile Tasks tab-content
 
-### Changed
+### Updated
 - Profile pages Tabs: Projects, Tasks & Teams
-- Refactored the CSS and combined the offcanvas style into one stylesheet
 - Pages to use HTML5 tags for semantic structure
 - Updated Task Item Card styles
+
+
+## 1.6.0
+
+### Updated
+- 📱 *Swip-left offcanvs* Better touch detections
+- Refactored the CSS and combined the offcanvas style into one stylesheet
+
 
 ### 📋 TODO:
 - [ ] Script better touch-swipe left function
 - [ ] Improve dark theme styles
 - [x] Add more example pages
-- [x] Remove blank & unused CSS styles
-- [ ] vertically align options for Task Cards
 
 ## 📂 Project Structure
 
@@ -75,7 +80,6 @@ All the notable changes to the template will be listed here. Most change will be
 ├──📝 README.md                         # Project documentation
 ├── 📂 assets/                          # images, stylesheets & Javascript files
 │   ├── 📂 css/
-│   │   ├── sider_wrapper.css
 │   │   └── stylesheet.css
 │   ├── 📂 images
 │   │   ├── 📂 users

@@ -54,7 +54,8 @@ body {
 /* --- Content Wrapper --- */
 #content-wrapper {
   position: relative;
-  left: 0px;
+  transform: translateX(0px);
+  /* left: 0px; */
   /* Push it to the right of the fixed element's width */
   width: 100%;
   /* Calculate remaining width */
@@ -80,7 +81,8 @@ body {
 
 /* --- #content-wrapper .sidebar-toggled --- */
 body.ng-sidenav-toggled #wrapper #content-wrapper {
-  left: 240px;
+  transform: translateX(240px);
+  /* left: 240px; */
 }
 
 /* --- Navigation tab Styles --- */
@@ -350,7 +352,8 @@ body.ng-sidenav-toggled #wrapper #content-wrapper {
 /* --- Sidebar Wrapper --- */
 #sidebar-wrapper {
   min-height: 100vh;
-  left: -15rem;
+  transform: translateX(-240px);
+  /* left: -15rem; */
   transition: all 0.25s ease-out;
   position: fixed;
 }
@@ -366,7 +369,8 @@ body.ng-sidenav-toggled #wrapper #content-wrapper {
 
 /* --- #sidebar-wrapper .sidebar-toggled --- */
 body.ng-sidenav-toggled #wrapper #sidebar-wrapper {
-  left: 0;
+  /* left: 0; */
+  transform: translateX(0px);
 }
 
 /* --- #sidebar-nav & .sidebar --- */

@@ -22,10 +22,8 @@
     <div class="d-flex" id="wrapper">
         <!-- Sidebar-wrapper / offcanvas for mobile -->
         <aside id="sidebar-wrapper" class="border-end">
-            <nav id="sidebar-nav" class="sidebar d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary overflow-auto"
-                aria-label="Side Navigation">
-                <a href="./"
-                    class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <nav id="sidebar-nav" class="sidebar d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary overflow-auto" aria-label="Side Navigation">
+                <a href="./" class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                     <i class="bi bi-bootstrap-fill bi-logo me-2"></i> <span class="fs-4">N-Gen Admin</span>
                 </a>
                 <hr style="margin-top: 6px !important;">
@@ -34,26 +32,28 @@
                     <!-- Top Nav -->
                     <li>
                         <a href="index.html" class="nav-link link-body-emphasis">
-                            <i class="bi bi-columns me-2"></i> Dashboard</a>
+                            <i class="bi bi-columns me-1"></i> Dashboard</a>
                     </li>
                     <li>
                         <a href="user-profile.html" class="nav-link link-body-emphasis">
-                            <i class="bi bi-person"></i> User Profile</a>
+                            <i class="bi bi-person me-1"></i> User Profile</a>
                     </li>
                     <li>
                         <a href="folders-and-files.html" class="nav-link active">
-                            <i class="bi bi-folder2 me-2"></i> Folders &amp; Files</a>
+                            <i class="bi bi-folder2 me-1"></i> Folders &amp; Files</a>
                     </li>
                     <li>
                         <a href="blank-page.html" class="nav-link link-body-emphasis">
-                            <i class="bi bi-file-earmark-text me-2"></i> Blank Page</a>
+                            <i class="bi bi-file-earmark-text me-1"></i> Blank Page</a>
                     </li>
                     <li class="nav-item">
                         <!-- Parent Link/Trigger -->
                         <a class="nav-link d-flex justify-content-between align-items-center link-body-emphasis"
                             data-bs-toggle="collapse" href="#submenu1" role="button" aria-expanded="false"
                             aria-controls="submenu1">
-                            <span><i class="bi bi-exclamation-triangle"></i> Error Page</span>
+                            <span>
+                                <i class="bi bi-exclamation-triangle me-1"></i> Error Page
+                            </span>
                             <i class="bi bi-chevron-down"></i> <!-- Optional Icon -->
                         </a>
                         <!-- Collapsible Sub-Nav -->
@@ -76,7 +76,9 @@
                         <a class="nav-link d-flex justify-content-between align-items-center link-body-emphasis"
                             data-bs-toggle="collapse" href="#submenu2" role="button" aria-expanded="false"
                             aria-controls="submenu2">
-                            <span><i class="bi bi-shield-lock"></i> Authentication</span>
+                            <span>
+                                <i class="bi bi-shield-lock me-1"></i> Authentication
+                            </span>
                             <i class="bi bi-chevron-down"></i> <!-- Optional Icon -->
                         </a>
                         <!-- Collapsible Sub-Nav -->
@@ -95,9 +97,8 @@
                         </div><!-- /.collapse -->
                     </li>
                     <li>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            class="nav-link link-body-emphasis">
-                            <i class="bi bi-copy"></i> Modal
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav-link link-body-emphasis">
+                            <i class="bi bi-copy me-1"></i> Modal
                         </a>
                     </li>
                     <!-- li with border-top instead of hr -->
@@ -108,24 +109,19 @@
                             data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
                             Account
                         </button>
-                        <div id="account-collapse" class="collapse">
+                        <div id="account-collapse" class="collapse" >
                             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                                 <li>
-                                    <a href="#"
-                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a>
+                                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a>
+                                    <a href="#"class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a>
+                                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign
-                                        out</a>
+                                    <a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign out</a>
                                 </li>
                             </ul>
                         </div><!-- /.collapse -->
@@ -138,9 +134,8 @@
                 <div class="dropdown">
                     <a href="#"
                         class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
-                        data-bs-toggle="dropdown" aria-expanded="false"> <img src="assets/images/user.png"
-                            alt="Guest User" width="32" height="32" class="rounded-circle me-2"> <strong>Guest</strong>
-                    </a>
+                        data-bs-toggle="dropdown" aria-expanded="false"> <img src="assets/images/user.png" alt="Guest User"
+                            width="32" height="32" class="rounded-circle me-2"> <strong>Guest</strong> </a>
                     <ul class="dropdown-menu text-small shadow">
                         <li>
                             <a class="dropdown-item" href="#" data-ng-btn="theme">

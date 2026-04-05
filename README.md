@@ -77,8 +77,6 @@ All the notable changes to the template will be listed here. Most change will be
 │   │   └── stylesheet.css
 │   ├── 📂 images
 │   │   ├── 📂 users
-│   │   │   ├── 📂 cartoon-avatars
-│   │   │   ├── 📂 640x640
 │   │   │   └── misc. pics
 │   │   ├── misc. pics
 │   │   └── user.png

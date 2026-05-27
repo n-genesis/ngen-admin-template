@@ -14,7 +14,6 @@ This template features a responsive layout, dark & light theme, offcanvas on mob
 **[View Live Preview](https://admin-template.ngendesign.com/)**
 
 ![Version](https://img.shields.io/badge/version-1.5.0-blue?style=for-the-badge)
-![Static Badge](https://img.shields.io/badge/Status-Active-red?style=for-the-badge)
 [![Static Badge](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/n-genesis/ngen-admin-template?style=for-the-badge&logo=github)

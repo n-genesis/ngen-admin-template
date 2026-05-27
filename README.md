@@ -1,5 +1,5 @@
 # DEPRECATED 
-This little project is not loger being developed. For a currelty active version check out a new [Admin Dashboard repo](https://github.com/n-genesis/admin-dashboard)
+This little project is not loger being developed. For a current version check out the new [Admin Dashboard repo](https://github.com/n-genesis/admin-dashboard)
 
 [![No Maintenance Intended](https://img.shields.io/badge/No_Maintenance_Intended-x-red?style=for-the-badge)](http://unmaintained.tech/)
 
@@ -9,9 +9,7 @@ A sleek and fully responsive Free **Bootstrap 5** Admin Dashboard Template with 
 ![N-Gen Admin Dashboard Preview](https://ngendesign.com/templates/ngen-admin-dashboard-v4.png)
 
 ## A Great Starter Template
-This template features a responsive layout, dark & light theme, offcanvas on mobile devices, and a wrapper `#main-content` element to keep your content orginized. It's made to be simple by using minimal styling CSS and instead extending Bootstrap's framework. It also uses HTML5 tags to help keep your page organized and makes its extremely easy to customization for your own project. To give you the ability to add you own event triggers and mechanics, it doesn't use any large JavaScript libraries to prevent cluttering your scripts and locking you into using premade functions. All hands down it's a simple starter template for `Views` or `templates` in small application using frameworks like; CodeIgniter 4, CakePHP, or Symfony. It looks great on mobile screen all the way up to desktop monitors. Feel free to customize it and use it in your next awesome application.  
-
-**[View Live Preview](https://admin-template.ngendesign.com/)**
+This template features a responsive layout, dark & light theme, offcanvas on mobile devices, and a wrapper `#main-content` element to keep your content orginized. It's made to be simple by using minimal styling CSS and i, nstead extending Bootstrap's framework. It also uses HTML5 tags to help keep your page organized and makes its extremely easy to customization for your own project. To give you the ability to add you own event triggers and mechanics, it doesn't use any large JavaScript libraries to prevent cluttering your scripts and locking you into using premade functions. All hands down it's a simple starter template for `Views` or `templates` in small application using frameworks like; CodeIgniter 4, CakePHP, or Symfony. It looks great on mobile screen all the way up to desktop monitors. Feel free to customize it and use it in your next awesome application.  
 
 ![Version](https://img.shields.io/badge/version-1.5.0-blue?style=for-the-badge)
 [![Static Badge](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](https://opensource.org/licenses/MIT)

@@ -1,4 +1,9 @@
-# N-Gen Admin Dashboard Template
+# DEPRECATED 
+This little project is not loger being developed. For a currelty active version check out a new [Admin Dashboard repo](https://github.com/n-genesis/admin-dashboard)
+
+[![No Maintenance Intended](https://img.shields.io/badge/No_Maintenance_Intended-x-red?style=for-the-badge)](http://unmaintained.tech/)
+
+
 A sleek and fully responsive Free **Bootstrap 5** Admin Dashboard Template with swipe left event on mobile screens to display the offcanvas. It's a great starter-kit for developing a modern, user-friendly, and customizable feature-rich front-end for your web applications.
 
 ![N-Gen Admin Dashboard Preview](https://ngendesign.com/templates/ngen-admin-dashboard-v4.png)

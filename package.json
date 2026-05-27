@@ -15,7 +15,7 @@
   "main": "server.js",
   "serverjs": {
     "url": "http://localhost",
-    "port": 3000
+    "port": 3005
   },
   "scripts": {
     "start-server": "node scripts/server.js"
